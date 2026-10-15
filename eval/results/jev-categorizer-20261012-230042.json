@@ -1,0 +1,2964 @@
+{
+  "run_id": "v1",
+  "timestamp": "2026-10-12T21:00:42+00:00",
+  "corpus": "eval/corpus/jev-bench-v1.jsonl",
+  "n": 378,
+  "n_stratified": 360,
+  "n_hard": 18,
+  "models": {
+    "haiku": "anthropic/claude-haiku-4.5",
+    "jev": "typesafe/jev-1.13",
+    "judge": "anthropic/claude-fable-5.1"
+  },
+  "all": {
+    "n": 378,
+    "agreement": {
+      "category": {
+        "haiku_vs_jev": {
+          "n": 378,
+          "agree": 311,
+          "frac": 0.823
+        },
+        "haiku_vs_db": {
+          "n": 378,
+          "agree": 254,
+          "frac": 0.672
+        },
+        "jev_vs_db": {
+          "n": 378,
+          "agree": 264,
+          "frac": 0.698
+        }
+      },
+      "subcategory": {
+        "haiku_vs_jev": {
+          "n": 378,
+          "agree": 217,
+          "frac": 0.574
+        },
+        "haiku_vs_db": {
+          "n": 378,
+          "agree": 127,
+          "frac": 0.336
+        },
+        "jev_vs_db": {
+          "n": 378,
+          "agree": 129,
+          "frac": 0.341
+        }
+      }
+    },
+    "pair_agreement": {
+      "n": 378,
+      "agree": 214,
+      "frac": 0.566
+    },
+    "judge": {
+      "n_disagree": 164,
+      "n_control": 17,
+      "win_rate": {
+        "haiku": 0.256,
+        "jev": 0.366,
+        "both": 0.262,
+        "neither": 0.116
+      },
+      "disagree_pair_acc": {
+        "haiku": 0.518,
+        "jev": 0.628
+      },
+      "category_acc": {
+        "haiku": 0.691,
+        "jev": 0.785
+      },
+      "subcategory_acc": {
+        "haiku": 0.464,
+        "jev": 0.497
+      },
+      "control": {
+        "pair_acc": {
+          "haiku": 0.941,
+          "jev": 0.941
+        },
+        "category_acc": {
+          "haiku": 0.941,
+          "jev": 0.941
+        }
+      },
+      "cost_usd": 6.2659,
+      "estimated_overall_acc": {
+        "haiku": 0.757,
+        "jev": 0.805
+      }
+    }
+  },
+  "stratified": {
+    "n": 360,
+    "agreement": {
+      "category": {
+        "haiku_vs_jev": {
+          "n": 360,
+          "agree": 295,
+          "frac": 0.819
+        },
+        "haiku_vs_db": {
+          "n": 360,
+          "agree": 247,
+          "frac": 0.686
+        },
+        "jev_vs_db": {
+          "n": 360,
+          "agree": 256,
+          "frac": 0.711
+        }
+      },
+      "subcategory": {
+        "haiku_vs_jev": {
+          "n": 360,
+          "agree": 205,
+          "frac": 0.569
+        },
+        "haiku_vs_db": {
+          "n": 360,
+          "agree": 126,
+          "frac": 0.35
+        },
+        "jev_vs_db": {
+          "n": 360,
+          "agree": 127,
+          "frac": 0.353
+        }
+      }
+    },
+    "pair_agreement": {
+      "n": 360,
+      "agree": 202,
+      "frac": 0.561
+    },
+    "judge": {
+      "n_disagree": 158,
+      "n_control": 17,
+      "win_rate": {
+        "haiku": 0.253,
+        "jev": 0.367,
+        "both": 0.259,
+        "neither": 0.12
+      },
+      "disagree_pair_acc": {
+        "haiku": 0.513,
+        "jev": 0.627
+      },
+      "category_acc": {
+        "haiku": 0.686,
+        "jev": 0.783
+      },
+      "subcategory_acc": {
+        "haiku": 0.457,
+        "jev": 0.503
+      },
+      "control": {
+        "pair_acc": {
+          "haiku": 0.941,
+          "jev": 0.941
+        },
+        "category_acc": {
+          "haiku": 0.941,
+          "jev": 0.941
+        }
+      },
+      "cost_usd": 6.2659,
+      "estimated_overall_acc": {
+        "haiku": 0.753,
+        "jev": 0.803
+      }
+    }
+  },
+  "hard": {
+    "n": 18,
+    "agreement": {
+      "category": {
+        "haiku_vs_jev": {
+          "n": 18,
+          "agree": 16,
+          "frac": 0.889
+        },
+        "haiku_vs_db": {
+          "n": 18,
+          "agree": 7,
+          "frac": 0.389
+        },
+        "jev_vs_db": {
+          "n": 18,
+          "agree": 8,
+          "frac": 0.444
+        }
+      },
+      "subcategory": {
+        "haiku_vs_jev": {
+          "n": 18,
+          "agree": 12,
+          "frac": 0.667
+        },
+        "haiku_vs_db": {
+          "n": 18,
+          "agree": 1,
+          "frac": 0.056
+        },
+        "jev_vs_db": {
+          "n": 18,
+          "agree": 2,
+          "frac": 0.111
+        }
+      }
+    },
+    "pair_agreement": {
+      "n": 18,
+      "agree": 12,
+      "frac": 0.667
+    },
+    "judge": {
+      "n_disagree": 6,
+      "n_control": 0,
+      "win_rate": {
+        "haiku": 0.333,
+        "jev": 0.333,
+        "both": 0.333,
+        "neither": 0.0
+      },
+      "disagree_pair_acc": {
+        "haiku": 0.667,
+        "jev": 0.667
+      },
+      "category_acc": {
+        "haiku": 0.833,
+        "jev": 0.833
+      },
+      "subcategory_acc": {
+        "haiku": 0.667,
+        "jev": 0.333
+      },
+      "control": {
+        "pair_acc": {
+          "haiku": null,
+          "jev": null
+        },
+        "category_acc": {
+          "haiku": null,
+          "jev": null
+        }
+      },
+      "cost_usd": 6.2659,
+      "estimated_overall_acc": {
+        "haiku": null,
+        "jev": null
+      }
+    },
+    "agree_with_audit_suggested": {
+      "haiku": {
+        "n": 18,
+        "agree": 9,
+        "frac": 0.5
+      },
+      "jev": {
+        "n": 18,
+        "agree": 7,
+        "frac": 0.389
+      }
+    }
+  },
+  "per_source": {
+    "kulturdaten": {
+      "n": 30,
+      "agreement": {
+        "category": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 24,
+            "frac": 0.8
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 22,
+            "frac": 0.733
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 20,
+            "frac": 0.667
+          }
+        },
+        "subcategory": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 22,
+            "frac": 0.733
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 17,
+            "frac": 0.567
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 19,
+            "frac": 0.633
+          }
+        }
+      },
+      "pair_agreement": {
+        "n": 30,
+        "agree": 21,
+        "frac": 0.7
+      },
+      "judge": {
+        "n_disagree": 9,
+        "n_control": 3,
+        "win_rate": {
+          "haiku": 0.222,
+          "jev": 0.111,
+          "both": 0.333,
+          "neither": 0.333
+        },
+        "disagree_pair_acc": {
+          "haiku": 0.556,
+          "jev": 0.444
+        },
+        "category_acc": {
+          "haiku": 0.583,
+          "jev": 0.583
+        },
+        "subcategory_acc": {
+          "haiku": 0.333,
+          "jev": 0.5
+        },
+        "control": {
+          "pair_acc": {
+            "haiku": 0.667,
+            "jev": 0.667
+          },
+          "category_acc": {
+            "haiku": 0.667,
+            "jev": 0.667
+          }
+        },
+        "cost_usd": 6.2659,
+        "estimated_overall_acc": {
+          "haiku": 0.634,
+          "jev": 0.6
+        }
+      }
+    },
+    "rausgegangen": {
+      "n": 30,
+      "agreement": {
+        "category": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 23,
+            "frac": 0.767
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 19,
+            "frac": 0.633
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 22,
+            "frac": 0.733
+          }
+        },
+        "subcategory": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 18,
+            "frac": 0.6
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 11,
+            "frac": 0.367
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 12,
+            "frac": 0.4
+          }
+        }
+      },
+      "pair_agreement": {
+        "n": 30,
+        "agree": 18,
+        "frac": 0.6
+      },
+      "judge": {
+        "n_disagree": 12,
+        "n_control": 0,
+        "win_rate": {
+          "haiku": 0.0,
+          "jev": 0.583,
+          "both": 0.417,
+          "neither": 0.0
+        },
+        "disagree_pair_acc": {
+          "haiku": 0.417,
+          "jev": 1.0
+        },
+        "category_acc": {
+          "haiku": 0.417,
+          "jev": 1.0
+        },
+        "subcategory_acc": {
+          "haiku": 0.25,
+          "jev": 0.583
+        },
+        "control": {
+          "pair_acc": {
+            "haiku": null,
+            "jev": null
+          },
+          "category_acc": {
+            "haiku": null,
+            "jev": null
+          }
+        },
+        "cost_usd": 6.2659,
+        "estimated_overall_acc": {
+          "haiku": null,
+          "jev": null
+        }
+      }
+    },
+    "themakery": {
+      "n": 30,
+      "agreement": {
+        "category": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 23,
+            "frac": 0.767
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 24,
+            "frac": 0.8
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 29,
+            "frac": 0.967
+          }
+        },
+        "subcategory": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 15,
+            "frac": 0.5
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 16,
+            "frac": 0.533
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 8,
+            "frac": 0.267
+          }
+        }
+      },
+      "pair_agreement": {
+        "n": 30,
+        "agree": 15,
+        "frac": 0.5
+      },
+      "judge": {
+        "n_disagree": 16,
+        "n_control": 1,
+        "win_rate": {
+          "haiku": 0.25,
+          "jev": 0.375,
+          "both": 0.375,
+          "neither": 0.0
+        },
+        "disagree_pair_acc": {
+          "haiku": 0.625,
+          "jev": 0.75
+        },
+        "category_acc": {
+          "haiku": 0.706,
+          "jev": 0.882
+        },
+        "subcategory_acc": {
+          "haiku": 0.353,
+          "jev": 0.529
+        },
+        "control": {
+          "pair_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          },
+          "category_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          }
+        },
+        "cost_usd": 6.2659,
+        "estimated_overall_acc": {
+          "haiku": 0.812,
+          "jev": 0.875
+        }
+      }
+    },
+    "berlinmitkind": {
+      "n": 30,
+      "agreement": {
+        "category": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 28,
+            "frac": 0.933
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 28,
+            "frac": 0.933
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 28,
+            "frac": 0.933
+          }
+        },
+        "subcategory": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 20,
+            "frac": 0.667
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 4,
+            "frac": 0.133
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 5,
+            "frac": 0.167
+          }
+        }
+      },
+      "pair_agreement": {
+        "n": 30,
+        "agree": 20,
+        "frac": 0.667
+      },
+      "judge": {
+        "n_disagree": 10,
+        "n_control": 4,
+        "win_rate": {
+          "haiku": 0.3,
+          "jev": 0.1,
+          "both": 0.6,
+          "neither": 0.0
+        },
+        "disagree_pair_acc": {
+          "haiku": 0.9,
+          "jev": 0.7
+        },
+        "category_acc": {
+          "haiku": 1.0,
+          "jev": 0.857
+        },
+        "subcategory_acc": {
+          "haiku": 0.643,
+          "jev": 0.643
+        },
+        "control": {
+          "pair_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          },
+          "category_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          }
+        },
+        "cost_usd": 6.2659,
+        "estimated_overall_acc": {
+          "haiku": 0.967,
+          "jev": 0.9
+        }
+      }
+    },
+    "resident_advisor": {
+      "n": 30,
+      "agreement": {
+        "category": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 22,
+            "frac": 0.733
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 25,
+            "frac": 0.833
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 22,
+            "frac": 0.733
+          }
+        },
+        "subcategory": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 18,
+            "frac": 0.6
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 2,
+            "frac": 0.067
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 3,
+            "frac": 0.1
+          }
+        }
+      },
+      "pair_agreement": {
+        "n": 30,
+        "agree": 18,
+        "frac": 0.6
+      },
+      "judge": {
+        "n_disagree": 16,
+        "n_control": 2,
+        "win_rate": {
+          "haiku": 0.125,
+          "jev": 0.562,
+          "both": 0.312,
+          "neither": 0.0
+        },
+        "disagree_pair_acc": {
+          "haiku": 0.438,
+          "jev": 0.875
+        },
+        "category_acc": {
+          "haiku": 0.778,
+          "jev": 0.778
+        },
+        "subcategory_acc": {
+          "haiku": 0.722,
+          "jev": 0.611
+        },
+        "control": {
+          "pair_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          },
+          "category_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          }
+        },
+        "cost_usd": 6.2659,
+        "estimated_overall_acc": {
+          "haiku": 0.775,
+          "jev": 0.95
+        }
+      }
+    },
+    "planetarium": {
+      "n": 30,
+      "agreement": {
+        "category": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 19,
+            "frac": 0.633
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 16,
+            "frac": 0.533
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 19,
+            "frac": 0.633
+          }
+        },
+        "subcategory": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 10,
+            "frac": 0.333
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 0,
+            "frac": 0.0
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 16,
+            "frac": 0.533
+          }
+        }
+      },
+      "pair_agreement": {
+        "n": 30,
+        "agree": 10,
+        "frac": 0.333
+      },
+      "judge": {
+        "n_disagree": 20,
+        "n_control": 0,
+        "win_rate": {
+          "haiku": 0.05,
+          "jev": 0.65,
+          "both": 0.0,
+          "neither": 0.3
+        },
+        "disagree_pair_acc": {
+          "haiku": 0.05,
+          "jev": 0.65
+        },
+        "category_acc": {
+          "haiku": 0.35,
+          "jev": 0.7
+        },
+        "subcategory_acc": {
+          "haiku": 0.05,
+          "jev": 0.65
+        },
+        "control": {
+          "pair_acc": {
+            "haiku": null,
+            "jev": null
+          },
+          "category_acc": {
+            "haiku": null,
+            "jev": null
+          }
+        },
+        "cost_usd": 6.2659,
+        "estimated_overall_acc": {
+          "haiku": null,
+          "jev": null
+        }
+      }
+    },
+    "luma": {
+      "n": 30,
+      "agreement": {
+        "category": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 29,
+            "frac": 0.967
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 23,
+            "frac": 0.767
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 24,
+            "frac": 0.8
+          }
+        },
+        "subcategory": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 19,
+            "frac": 0.633
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 2,
+            "frac": 0.067
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 2,
+            "frac": 0.067
+          }
+        }
+      },
+      "pair_agreement": {
+        "n": 30,
+        "agree": 19,
+        "frac": 0.633
+      },
+      "judge": {
+        "n_disagree": 11,
+        "n_control": 1,
+        "win_rate": {
+          "haiku": 0.182,
+          "jev": 0.455,
+          "both": 0.364,
+          "neither": 0.0
+        },
+        "disagree_pair_acc": {
+          "haiku": 0.545,
+          "jev": 0.818
+        },
+        "category_acc": {
+          "haiku": 0.917,
+          "jev": 1.0
+        },
+        "subcategory_acc": {
+          "haiku": 0.417,
+          "jev": 0.667
+        },
+        "control": {
+          "pair_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          },
+          "category_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          }
+        },
+        "cost_usd": 6.2659,
+        "estimated_overall_acc": {
+          "haiku": 0.833,
+          "jev": 0.933
+        }
+      }
+    },
+    "eventbrite": {
+      "n": 30,
+      "agreement": {
+        "category": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 29,
+            "frac": 0.967
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 3,
+            "frac": 0.1
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 3,
+            "frac": 0.1
+          }
+        },
+        "subcategory": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 21,
+            "frac": 0.7
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 2,
+            "frac": 0.067
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 3,
+            "frac": 0.1
+          }
+        }
+      },
+      "pair_agreement": {
+        "n": 30,
+        "agree": 21,
+        "frac": 0.7
+      },
+      "judge": {
+        "n_disagree": 9,
+        "n_control": 1,
+        "win_rate": {
+          "haiku": 0.0,
+          "jev": 0.444,
+          "both": 0.444,
+          "neither": 0.111
+        },
+        "disagree_pair_acc": {
+          "haiku": 0.444,
+          "jev": 0.889
+        },
+        "category_acc": {
+          "haiku": 0.8,
+          "jev": 0.9
+        },
+        "subcategory_acc": {
+          "haiku": 0.4,
+          "jev": 0.6
+        },
+        "control": {
+          "pair_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          },
+          "category_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          }
+        },
+        "cost_usd": 6.2659,
+        "estimated_overall_acc": {
+          "haiku": 0.833,
+          "jev": 0.967
+        }
+      }
+    },
+    "wochenmaerkte": {
+      "n": 30,
+      "agreement": {
+        "category": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 30,
+            "frac": 1.0
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 30,
+            "frac": 1.0
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 30,
+            "frac": 1.0
+          }
+        },
+        "subcategory": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 30,
+            "frac": 1.0
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 30,
+            "frac": 1.0
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 30,
+            "frac": 1.0
+          }
+        }
+      },
+      "pair_agreement": {
+        "n": 30,
+        "agree": 30,
+        "frac": 1.0
+      },
+      "judge": {
+        "n_disagree": 0,
+        "n_control": 1,
+        "win_rate": {
+          "haiku": null,
+          "jev": null,
+          "both": null,
+          "neither": null
+        },
+        "disagree_pair_acc": {
+          "haiku": null,
+          "jev": null
+        },
+        "category_acc": {
+          "haiku": 1.0,
+          "jev": 1.0
+        },
+        "subcategory_acc": {
+          "haiku": 1.0,
+          "jev": 1.0
+        },
+        "control": {
+          "pair_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          },
+          "category_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          }
+        },
+        "cost_usd": 6.2659,
+        "estimated_overall_acc": {
+          "haiku": null,
+          "jev": null
+        }
+      }
+    },
+    "tip_berlin": {
+      "n": 30,
+      "agreement": {
+        "category": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 22,
+            "frac": 0.733
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 23,
+            "frac": 0.767
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 21,
+            "frac": 0.7
+          }
+        },
+        "subcategory": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 13,
+            "frac": 0.433
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 14,
+            "frac": 0.467
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 9,
+            "frac": 0.3
+          }
+        }
+      },
+      "pair_agreement": {
+        "n": 30,
+        "agree": 13,
+        "frac": 0.433
+      },
+      "judge": {
+        "n_disagree": 12,
+        "n_control": 1,
+        "win_rate": {
+          "haiku": 0.5,
+          "jev": 0.333,
+          "both": 0.083,
+          "neither": 0.083
+        },
+        "disagree_pair_acc": {
+          "haiku": 0.583,
+          "jev": 0.417
+        },
+        "category_acc": {
+          "haiku": 0.692,
+          "jev": 0.615
+        },
+        "subcategory_acc": {
+          "haiku": 0.615,
+          "jev": 0.385
+        },
+        "control": {
+          "pair_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          },
+          "category_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          }
+        },
+        "cost_usd": 6.2659,
+        "estimated_overall_acc": {
+          "haiku": 0.764,
+          "jev": 0.669
+        }
+      }
+    },
+    "discovery_agent": {
+      "n": 30,
+      "agreement": {
+        "category": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 27,
+            "frac": 0.9
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 26,
+            "frac": 0.867
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 23,
+            "frac": 0.767
+          }
+        },
+        "subcategory": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 9,
+            "frac": 0.3
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 25,
+            "frac": 0.833
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 7,
+            "frac": 0.233
+          }
+        }
+      },
+      "pair_agreement": {
+        "n": 30,
+        "agree": 9,
+        "frac": 0.3
+      },
+      "judge": {
+        "n_disagree": 21,
+        "n_control": 1,
+        "win_rate": {
+          "haiku": 0.667,
+          "jev": 0.048,
+          "both": 0.143,
+          "neither": 0.143
+        },
+        "disagree_pair_acc": {
+          "haiku": 0.81,
+          "jev": 0.19
+        },
+        "category_acc": {
+          "haiku": 0.818,
+          "jev": 0.773
+        },
+        "subcategory_acc": {
+          "haiku": 0.818,
+          "jev": 0.045
+        },
+        "control": {
+          "pair_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          },
+          "category_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          }
+        },
+        "cost_usd": 6.2659,
+        "estimated_overall_acc": {
+          "haiku": 0.867,
+          "jev": 0.433
+        }
+      }
+    },
+    "berlin_de": {
+      "n": 30,
+      "agreement": {
+        "category": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 19,
+            "frac": 0.633
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 8,
+            "frac": 0.267
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 15,
+            "frac": 0.5
+          }
+        },
+        "subcategory": {
+          "haiku_vs_jev": {
+            "n": 30,
+            "agree": 10,
+            "frac": 0.333
+          },
+          "haiku_vs_db": {
+            "n": 30,
+            "agree": 3,
+            "frac": 0.1
+          },
+          "jev_vs_db": {
+            "n": 30,
+            "agree": 13,
+            "frac": 0.433
+          }
+        }
+      },
+      "pair_agreement": {
+        "n": 30,
+        "agree": 8,
+        "frac": 0.267
+      },
+      "judge": {
+        "n_disagree": 22,
+        "n_control": 2,
+        "win_rate": {
+          "haiku": 0.273,
+          "jev": 0.318,
+          "both": 0.182,
+          "neither": 0.227
+        },
+        "disagree_pair_acc": {
+          "haiku": 0.455,
+          "jev": 0.5
+        },
+        "category_acc": {
+          "haiku": 0.583,
+          "jev": 0.667
+        },
+        "subcategory_acc": {
+          "haiku": 0.333,
+          "jev": 0.5
+        },
+        "control": {
+          "pair_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          },
+          "category_acc": {
+            "haiku": 1.0,
+            "jev": 1.0
+          }
+        },
+        "cost_usd": 6.2659,
+        "estimated_overall_acc": {
+          "haiku": 0.601,
+          "jev": 0.633
+        }
+      }
+    }
+  },
+  "confusion_haiku_rows_jev_cols": {
+    "music": {
+      "music": 33,
+      "nightlife": 4,
+      "culture": 1,
+      "food": 0,
+      "markets": 0,
+      "workshops": 0,
+      "meetups": 2,
+      "outdoors": 0,
+      "family": 0,
+      "None": 0
+    },
+    "nightlife": {
+      "music": 6,
+      "nightlife": 40,
+      "culture": 2,
+      "food": 0,
+      "markets": 0,
+      "workshops": 0,
+      "meetups": 1,
+      "outdoors": 0,
+      "family": 0,
+      "None": 0
+    },
+    "culture": {
+      "music": 3,
+      "nightlife": 0,
+      "culture": 53,
+      "food": 0,
+      "markets": 0,
+      "workshops": 0,
+      "meetups": 2,
+      "outdoors": 1,
+      "family": 0,
+      "None": 0
+    },
+    "food": {
+      "music": 0,
+      "nightlife": 0,
+      "culture": 0,
+      "food": 35,
+      "markets": 1,
+      "workshops": 7,
+      "meetups": 0,
+      "outdoors": 0,
+      "family": 0,
+      "None": 0
+    },
+    "markets": {
+      "music": 0,
+      "nightlife": 0,
+      "culture": 2,
+      "food": 0,
+      "markets": 4,
+      "workshops": 0,
+      "meetups": 0,
+      "outdoors": 0,
+      "family": 0,
+      "None": 0
+    },
+    "workshops": {
+      "music": 1,
+      "nightlife": 0,
+      "culture": 0,
+      "food": 0,
+      "markets": 1,
+      "workshops": 43,
+      "meetups": 0,
+      "outdoors": 1,
+      "family": 0,
+      "None": 0
+    },
+    "meetups": {
+      "music": 0,
+      "nightlife": 1,
+      "culture": 6,
+      "food": 0,
+      "markets": 0,
+      "workshops": 3,
+      "meetups": 43,
+      "outdoors": 0,
+      "family": 0,
+      "None": 0
+    },
+    "outdoors": {
+      "music": 0,
+      "nightlife": 1,
+      "culture": 4,
+      "food": 0,
+      "markets": 0,
+      "workshops": 0,
+      "meetups": 2,
+      "outdoors": 8,
+      "family": 1,
+      "None": 0
+    },
+    "family": {
+      "music": 0,
+      "nightlife": 0,
+      "culture": 8,
+      "food": 0,
+      "markets": 2,
+      "workshops": 2,
+      "meetups": 2,
+      "outdoors": 0,
+      "family": 52,
+      "None": 0
+    },
+    "None": {
+      "music": 0,
+      "nightlife": 0,
+      "culture": 0,
+      "food": 0,
+      "markets": 0,
+      "workshops": 0,
+      "meetups": 0,
+      "outdoors": 0,
+      "family": 0,
+      "None": 0
+    }
+  },
+  "calibration": [
+    {
+      "range": [
+        0.0,
+        0.5
+      ],
+      "n": 41,
+      "n_judged": 30,
+      "acc_vs_judge": 0.433,
+      "agree_haiku": 0.512
+    },
+    {
+      "range": [
+        0.5,
+        0.7
+      ],
+      "n": 38,
+      "n_judged": 29,
+      "acc_vs_judge": 0.552,
+      "agree_haiku": 0.579
+    },
+    {
+      "range": [
+        0.7,
+        0.9
+      ],
+      "n": 50,
+      "n_judged": 35,
+      "acc_vs_judge": 0.657,
+      "agree_haiku": 0.72
+    },
+    {
+      "range": [
+        0.9,
+        1.0
+      ],
+      "n": 249,
+      "n_judged": 87,
+      "acc_vs_judge": 0.77,
+      "agree_haiku": 0.932
+    }
+  ],
+  "real_event": {
+    "both_flag": 3,
+    "haiku_only": 0,
+    "jev_only": 81,
+    "neither": 294
+  },
+  "cost": {
+    "haiku": {
+      "n": 378,
+      "total_usd": 0.30878,
+      "per_event_usd": 0.0008169,
+      "p50_ms": 610,
+      "p95_ms": 963,
+      "tokens_in_per_event": 330,
+      "errors": 0,
+      "cost_estimated": false
+    },
+    "jev": {
+      "n": 378,
+      "total_usd": 0.05816,
+      "per_event_usd": 0.0001539,
+      "p50_ms": 353,
+      "p95_ms": 524,
+      "tokens_in_per_event": 3664,
+      "errors": 0,
+      "cost_estimated": false
+    }
+  },
+  "order_flip": {
+    "n": 100,
+    "flips": 5,
+    "category_flip_rate": 0.05,
+    "mean_abs_conf_delta": 0.0629,
+    "identical_probs": 31,
+    "examples": [
+      {
+        "id": "12464c66-5f4a-4653-b9c6-be9bc7476b90",
+        "a": "meetups",
+        "b": "culture",
+        "conf_a": 0.45,
+        "conf_b": 0.66
+      },
+      {
+        "id": "2ce2596a-a5ef-47fe-b44b-b866f0d94e1c",
+        "a": "family",
+        "b": "culture",
+        "conf_a": 0.51,
+        "conf_b": 0.55
+      },
+      {
+        "id": "ca59b51e-1e62-40f4-aee9-95932d154f3d",
+        "a": "meetups",
+        "b": "culture",
+        "conf_a": 0.68,
+        "conf_b": 0.44
+      },
+      {
+        "id": "d4ef312a-cc68-4682-a6b7-ebd5a02c2faa",
+        "a": "music",
+        "b": "culture",
+        "conf_a": 0.58,
+        "conf_b": 0.54
+      },
+      {
+        "id": "daa1c312-990f-4a8a-8bd4-f1f45dd6c01a",
+        "a": "family",
+        "b": "culture",
+        "conf_a": 0.44,
+        "conf_b": 0.67
+      }
+    ]
+  },
+  "disagreements": [
+    {
+      "id": "0c2273eb-c7ea-4598-908e-f4b01b56db90",
+      "title": "Open Mike",
+      "source": "berlin_de",
+      "haiku": "category='nightlife', subcategory='bar-event'",
+      "jev": "category='nightlife', subcategory='comedy'",
+      "winner": "neither",
+      "reason": "The two-day 'Open Mike' in November listed on berlin.de is the annual Haus für Poesie literature competition for young German-language authors (readings of prose and poetry), not a comedy or bar open-mic night, so it belongs under culture/reading."
+    },
+    {
+      "id": "112a13e5-c2c5-4c36-a1ca-94be0698112e",
+      "title": "Historischer Weihnachtsmarkt auf dem RAW-Gelände",
+      "source": "berlin_de",
+      "haiku": "category='food', subcategory='food-market'",
+      "jev": "category='markets', subcategory='craft-market'",
+      "winner": "jev",
+      "reason": "A Weihnachtsmarkt is a shopping-focused market of stalls (a historical one especially features artisan/handicraft vendors), so it falls under markets/craft-market rather than food, since food and Glühwein are secondary rather than the event itself."
+    },
+    {
+      "id": "1b34413d-d0c7-447c-b754-dc2e354ebc4f",
+      "title": "Provinziale: Internationales Filmfest Eberswalde",
+      "source": "berlin_de",
+      "haiku": "category='culture', subcategory='cinema'",
+      "jev": "category='culture', subcategory='festival'",
+      "winner": "both",
+      "reason": "An international film festival is a culture event that fits both the 'festival' (week-long Filmfest) and 'cinema' (film screenings) subcategories, with 'festival' being the slightly better fit for a multi-day Filmfest."
+    },
+    {
+      "id": "1ea5dc31-d9e0-4a31-9ed5-ec7d64afc0ab",
+      "title": "Christmas Garden Berlin",
+      "source": "berlin_de",
+      "haiku": "category='family', subcategory='family-event'",
+      "jev": "category='markets', subcategory=None",
+      "winner": "neither",
+      "reason": "Christmas Garden Berlin is an illuminated light-art trail (at the Botanischer Garten), not a shopping market and not explicitly a kids/family event per Rule 12, so it best fits culture/exhibition as an outdoor light installation show."
+    },
+    {
+      "id": "2358f1ef-aff8-4802-9f2f-a732c9fcfc45",
+      "title": "Weihnachts-Rummel an der Landsberger Allee",
+      "source": "berlin_de",
+      "haiku": "category='family', subcategory='family-event'",
+      "jev": "category='markets', subcategory=None",
+      "winner": "neither",
+      "reason": "A 'Weihnachts-Rummel' is a Christmas funfair/Volksfest with rides and attractions, not a shopping market and not explicitly a kids/family event per rule 12, so it fits best as culture → festival."
+    },
+    {
+      "id": "41b356cb-5464-4133-92e3-f1a57527657f",
+      "title": "Film Restored - Filmerbe-Festival",
+      "source": "berlin_de",
+      "haiku": "category='culture', subcategory='cinema'",
+      "jev": "category='culture', subcategory='festival'",
+      "winner": "both",
+      "reason": "Film Restored is a multi-day film heritage festival of restored film screenings, so 'culture' is clearly right and both 'cinema' (the primary activity is watching films) and 'festival' (the event is explicitly a multi-day Filmerbe-Festival) are defensible subcategories, with 'festival' matching the title most directly."
+    },
+    {
+      "id": "57c6b4f2-a065-4249-820c-8bc42489f226",
+      "title": "IFA 2027",
+      "source": "berlin_de",
+      "haiku": "category='meetups', subcategory='tech-startup'",
+      "jev": "category='culture', subcategory='festival'",
+      "winner": "haiku",
+      "reason": "IFA is Berlin's international consumer-electronics/technology trade fair, which maps best to the tech/startup industry-event bucket under meetups, not to an arts/culture festival."
+    },
+    {
+      "id": "6caf3b01-df58-4f16-befd-e1bbcb60bb4a",
+      "title": "Berliner Märchentage",
+      "source": "berlin_de",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='culture', subcategory='festival'",
+      "winner": "jev",
+      "reason": "Berliner Märchentage is a multi-week, city-wide fairy-tale festival of readings and performances for all ages; the listing contains none of the explicit children's keywords required by rule 12, so it is culture/festival rather than family."
+    },
+    {
+      "id": "76236013-600c-473b-92e2-99a428fa9f6d",
+      "title": "Internationales Kurzfilmfestival Berlin",
+      "source": "berlin_de",
+      "haiku": "category='culture', subcategory='cinema'",
+      "jev": "category='culture', subcategory='festival'",
+      "winner": "both",
+      "reason": "A multi-day international short film festival is clearly culture; 'festival' best captures the event format while 'cinema' validly describes the content, so both label pairs are acceptable."
+    },
+    {
+      "id": "7b7db241-92f9-4db9-8df2-8747b4aef7ee",
+      "title": "Zero Waste Future Festival",
+      "source": "berlin_de",
+      "haiku": "category='meetups', subcategory='talk-panel'",
+      "jev": "category='culture', subcategory='festival'",
+      "winner": "jev",
+      "reason": "The only usable signal is the word 'Festival' in the title, which the taxonomy maps to culture/festival, while B's 'talk-panel' assumes a format (panel discussion) that nothing in the sparse data supports."
+    },
+    {
+      "id": "9f32154d-9bfc-4871-a6a6-0df2edbcf2f7",
+      "title": "Mary Jane Berlin",
+      "source": "berlin_de",
+      "haiku": "category='markets', subcategory='design-market'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "jev",
+      "reason": "Mary Jane Berlin is a multi-day cannabis expo/festival with exhibitors, talks and stages, so 'culture' (ideally subcategory 'festival', null acceptable given the sparse data) fits, whereas 'markets/design-market' mislabels a trade-fair festival as a shopping design market."
+    },
+    {
+      "id": "b907b9d7-7a47-4b0f-9aa8-0eb1daca09a4",
+      "title": "Re:publica",
+      "source": "berlin_de",
+      "haiku": "category='meetups', subcategory='tech-startup'",
+      "jev": "category='meetups', subcategory=None",
+      "winner": "haiku",
+      "reason": "Re:publica is Berlin's well-known conference on digital society, internet and tech, so 'meetups' with the 'tech-startup' subcategory is the most specific correct label (A's null subcategory is not wrong but needlessly omits an obvious fit)."
+    },
+    {
+      "id": "c7f7659f-9fe9-4db8-be2e-92bbb64c5f72",
+      "title": "Bazaar Berlin",
+      "source": "berlin_de",
+      "haiku": "category='markets', subcategory='design-market'",
+      "jev": "category='markets', subcategory=None",
+      "winner": "both",
+      "reason": "Bazaar Berlin is a shopping fair for handicrafts, design and natural goods at Messe Berlin, so 'markets' is correct; 'design-market' is a reasonable specific subcategory while null is also acceptable given the sparse listing data."
+    },
+    {
+      "id": "c83f5510-6871-45ce-a507-b037536c8dd8",
+      "title": "Berlin Freedom Week",
+      "source": "berlin_de",
+      "haiku": "category='meetups', subcategory='activism'",
+      "jev": "category='culture', subcategory='festival'",
+      "winner": "jev",
+      "reason": "Berlin Freedom Week is a week-long, city-wide festival format (talks, exhibitions, film, art, concerts around 9 November) rather than a single activism meetup, so the multi-format 'culture/festival' label fits best."
+    },
+    {
+      "id": "ca59b51e-1e62-40f4-aee9-95932d154f3d",
+      "title": "Veranstaltungen am 09. November",
+      "source": "berlin_de",
+      "haiku": "category='meetups', subcategory='talk-panel'",
+      "jev": "category='meetups', subcategory=None",
+      "winner": "jev",
+      "reason": "This is an overview of heterogeneous commemorative events (Gedenkveranstaltungen) best filed under meetups as civic/community gatherings, but nothing indicates a talk or panel format, so B's 'talk-panel' is unsupported while A's null subcategory is the acceptable choice (at most 'community' would also fit)."
+    },
+    {
+      "id": "ce016d3a-77ca-4790-9763-cde32653a920",
+      "title": "Boot & Fun",
+      "source": "berlin_de",
+      "haiku": "category='outdoors', subcategory=None",
+      "jev": "category='nightlife', subcategory=None",
+      "winner": "neither",
+      "reason": "Boot & Fun is the annual boat/water-sports trade fair at Messe Berlin (26–29 Nov), i.e. an indoor exhibition the attendee visits to browse exhibits, so it is neither a nightlife event nor an outdoor sports activity; culture/exhibition is the closest fit in this taxonomy."
+    },
+    {
+      "id": "d3b76abd-936e-4d29-a675-39738a5d188e",
+      "title": "Ostpro Berlin",
+      "source": "berlin_de",
+      "haiku": "category='culture', subcategory='festival'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "neither",
+      "reason": "Ostpro Berlin is a consumer sales fair (Verkaufsmesse) for East German products where the primary activity is browsing and buying goods, so it is shopping-focused 'markets' rather than a cultural festival or exhibition; none of the markets subcategories fits precisely, so subcategory is null."
+    },
+    {
+      "id": "daa1a5b4-b00c-4212-82c7-c69aad789b9a",
+      "title": "Vorlesetag in Berlin",
+      "source": "berlin_de",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='family', subcategory=None",
+      "winner": "haiku",
+      "reason": "Vorlesetag (national read-aloud day) is a children's reading program akin to the 'Vorlesestunde' keyword in rule 12, so 'family' with 'kids-program' is the best fit; B's null subcategory is needlessly vague when a clear subcategory applies."
+    },
+    {
+      "id": "e6ab78f5-d0ca-4a14-be1d-ffa7eb0371d4",
+      "title": "Tag des Krematoriums",
+      "source": "berlin_de",
+      "haiku": "category='meetups', subcategory=None",
+      "jev": "category='culture', subcategory=None",
+      "winner": "haiku",
+      "reason": "An open day at the crematorium (tours, info stands, talks for the public) is an informational community event rather than an exhibition/theater/cinema-type culture event, so meetups fits best, ideally with subcategory community."
+    },
+    {
+      "id": "e91679f6-7c46-46e3-a5a2-69ea93eff074",
+      "title": "Zeughausmesse",
+      "source": "berlin_de",
+      "haiku": "category='markets', subcategory='design-market'",
+      "jev": "category='culture', subcategory='exhibition'",
+      "winner": "haiku",
+      "reason": "The Zeughausmesse is Berlin's annual sales fair for contemporary applied arts and craft design (Kunsthandwerk) at the Zeughaus, where attendees go primarily to browse and buy designer objects, making it a shopping-focused design/craft market rather than a museum exhibition."
+    },
+    {
+      "id": "e932fb20-ee6f-489c-896e-6920ea18698d",
+      "title": "Veranstaltungen am 9. November",
+      "source": "berlin_de",
+      "haiku": "category='meetups', subcategory='talk-panel'",
+      "jev": "category='meetups', subcategory=None",
+      "winner": "jev",
+      "reason": "The listing is a generic overview of commemorative events (Gedenkveranstaltungen) with no indication of a talk or panel format, so 'meetups' with a null subcategory is defensible while 'talk-panel' is an unsupported invention."
+    },
+    {
+      "id": "fdf461f3-0713-4018-84a3-f4b3cad9346f",
+      "title": "Berlin Science Week",
+      "source": "berlin_de",
+      "haiku": "category='meetups', subcategory='talk-panel'",
+      "jev": "category='meetups', subcategory=None",
+      "winner": "haiku",
+      "reason": "Berlin Science Week is a city-wide program of science talks, panels, lectures and discussions, so 'meetups' with the specific 'talk-panel' subcategory is more informative and accurate than leaving the subcategory null."
+    },
+    {
+      "id": "0389c699-b588-4268-b7d4-379a7ee9002e",
+      "title": "VELOBerlin 2026",
+      "source": "berlinmitkind",
+      "haiku": "category='outdoors', subcategory='sports'",
+      "jev": "category='family', subcategory=None",
+      "winner": "haiku",
+      "reason": "VELOBerlin is a public bicycle fair/festival with test rides at Tempelhof whose primary activity is cycling, which fits outdoors/sports, whereas 'family' is only inferred from the source site and the event is not explicitly for children per rule 12."
+    },
+    {
+      "id": "40178460-a82a-4a0f-80ed-f3926b4e0a81",
+      "title": "Feel free Friday",
+      "source": "berlinmitkind",
+      "haiku": "category='family', subcategory='family-event'",
+      "jev": "category='family', subcategory='kids-program'",
+      "winner": "jev",
+      "reason": "An after-school open drop-in for kids/teens at a youth center (die gelbe Villa, source berlinmitkind) is a kids program, not a family event attended by parents and children together."
+    },
+    {
+      "id": "409069e4-9d95-42a4-8f99-46a7cb213787",
+      "title": "Grüße gehen raus!",
+      "source": "berlinmitkind",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='family', subcategory='family-event'",
+      "winner": "both",
+      "reason": "It is a creative workshop explicitly 'für Familien' in a museum exhibition, so 'family' is clearly right; 'family-event' best matches the family-oriented framing, but 'kids-program' is also a defensible reading of a children's workshop activity, so both label pairs are acceptable."
+    },
+    {
+      "id": "65c03ebe-4631-4715-8c05-72aade4867ee",
+      "title": "Taschenlampen-Tour: Was machen die Roboter nachts im Museum?",
+      "source": "berlinmitkind",
+      "haiku": "category='family', subcategory='museum-for-kids'",
+      "jev": "category='culture', subcategory='exhibition'",
+      "winner": "haiku",
+      "reason": "A flashlight night tour about robots at a museum, sourced from a kids-events site (berlinmitkind), is a children's museum program, so rule 12 makes it 'family' / 'museum-for-kids' rather than a general culture exhibition."
+    },
+    {
+      "id": "a174448d-fc17-40ed-9ba4-e4b019b67b0f",
+      "title": "Zimt und Zauber: Die verhexte Mozartkugel",
+      "source": "berlinmitkind",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='family', subcategory='family-event'",
+      "winner": "both",
+      "reason": "\"Zimt und Zauber\" is Wintergarten's well-known Christmas variety show for children and the whole family (confirmed by the berlinmitkind source), so 'family' is correct and both 'kids-program' and 'family-event' are defensible subcategories for a kids-oriented show attended by families."
+    },
+    {
+      "id": "a866bd66-0017-43ef-88ee-1426996067bc",
+      "title": "Splitter",
+      "source": "berlinmitkind",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='family', subcategory=None",
+      "winner": "both",
+      "reason": "Theater Strahl is a Berlin children's/youth theater and the source is a family listing site, so 'family' is right; 'kids-program' is the best-fitting subcategory for a kids' theater show, but with no description a null subcategory is also an acceptable conservative choice."
+    },
+    {
+      "id": "b233d4e8-8450-4534-a510-c0550097671b",
+      "title": "Zimt und Zauber: Die verhexte Mozartkugel",
+      "source": "berlinmitkind",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='family', subcategory='family-event'",
+      "winner": "both",
+      "reason": "Zimt und Zauber is the Wintergarten's Christmas variety show for children and families (source berlinmitkind), so 'family' is correct and both 'family-event' and 'kids-program' are defensible subcategories for a kids'/family stage show."
+    },
+    {
+      "id": "b5bbb337-ff86-4c46-873c-f872e73a25b0",
+      "title": "Mama-Kind Mini Retreat",
+      "source": "berlinmitkind",
+      "haiku": "category='family', subcategory='family-event'",
+      "jev": "category='family', subcategory=None",
+      "winner": "haiku",
+      "reason": "A mother-and-child mindfulness retreat from a kids-oriented source is explicitly a family event, so 'family' is correct and 'family-event' is the fitting valid subcategory, making B more complete than A's null."
+    },
+    {
+      "id": "ba623641-37ea-4bc9-bd15-6edea138242e",
+      "title": "Glanz und Gloria: Festplanung mit der Kammerzofe Sophie",
+      "source": "berlinmitkind",
+      "haiku": "category='family', subcategory='family-event'",
+      "jev": "category='family', subcategory='kids-program'",
+      "winner": "both",
+      "reason": "It is an interactive game explicitly 'für Familien mit Kindern' at Schloss Charlottenburg, so 'family' is clear and both 'family-event' (families with kids) and 'kids-program' (a children's educational program) are defensible subcategories."
+    },
+    {
+      "id": "c495f6eb-92ce-4175-b380-d7761fca937a",
+      "title": "Geisterwelten",
+      "source": "berlinmitkind",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='family', subcategory='family-event'",
+      "winner": "both",
+      "reason": "FEZ-Berlin is a children's/family center and the source is berlinmitkind, so the Halloween-style haunted-house event is clearly 'family'; it reads as a large themed family experience (family-event) but also fits as a kids program, so both subcategories are acceptable."
+    },
+    {
+      "id": "100840cf-ed0e-4ed3-a0af-fd0a635597c8",
+      "title": "27.11.2026 La Élite",
+      "source": "discovery_agent",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='nightlife', subcategory='club-night'",
+      "winner": "haiku",
+      "reason": "La Élite is a Barcelona-based synth-punk/post-punk band and Modus Berlin is a live concert venue, so the primary activity is a live band performance (music/live-concert), not a DJ-driven club night."
+    },
+    {
+      "id": "16f31a23-0722-47c3-90ff-ced98220dc21",
+      "title": "24.11.2026 Hey, Nothing",
+      "source": "discovery_agent",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='nightlife', subcategory=None",
+      "winner": "haiku",
+      "reason": "The listing is a dated artist booking ('Hey, Nothing', an indie/folk duo) at a concert venue, so the primary activity is a live concert under rule 2, not a DJ/club night."
+    },
+    {
+      "id": "1c0f9eb7-fb16-4e9c-aef9-f3c014c2af55",
+      "title": "Samstag, 08. Mai 2027, 19:30 Uhr Clara Lösel Uber Eats Music Hall mehr erfahren",
+      "source": "discovery_agent",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='music', subcategory=None",
+      "winner": "haiku",
+      "reason": "Clara Lösel is a singer-songwriter/spoken-word performer playing a dated evening show at a concert venue (Uber Eats Music Hall), so 'music' with 'live-concert' is the most accurate pair; B's null subcategory is permissible but needlessly less specific when the concert nature is clearly inferable."
+    },
+    {
+      "id": "22d37724-29b2-4706-a3f0-4c3ed8740b74",
+      "title": "Freitag, 11. Dez. 2026, 20:00 Uhr INNA Uber Eats Music Hall mehr erfahren",
+      "source": "discovery_agent",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='music', subcategory=None",
+      "winner": "haiku",
+      "reason": "INNA is a pop artist performing at Uber Eats Music Hall, a concert venue, so this is a live concert; 'live-concert' is a valid, better-specified subcategory than null (rock-pop would also be acceptable)."
+    },
+    {
+      "id": "585c14e4-f3f5-4bf5-b986-5ecbd713a0e7",
+      "title": "HALF OF A RAINBOW + ANTONIA ESTELLE",
+      "source": "discovery_agent",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='music', subcategory=None",
+      "winner": "both",
+      "reason": "The 'X + Y' billing of two acts at a concert venue clearly indicates a live music event, so 'music' is right; 'live-concert' is the best-fit subcategory, but with no description or genre info a null subcategory is also defensible."
+    },
+    {
+      "id": "64cbb31e-a886-4b80-b91c-20a7a9a8c44a",
+      "title": "Sonntag, 10. Okt. 2027, 14:00 Uhr Meister Eder und sein Pumuckl Uber Eats Music ",
+      "source": "discovery_agent",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='family', subcategory=None",
+      "winner": "haiku",
+      "reason": "Meister Eder und sein Pumuckl is a well-known children's stage show, so it is 'family' and the specific subcategory 'kids-program' is preferable to null."
+    },
+    {
+      "id": "79f9d2c8-78f7-4930-9acc-b19c502c2235",
+      "title": "Freitag, 11. Dez. 2026, 20:00 Uhr INNA Uber Eats Music Hall mehr erfahren",
+      "source": "discovery_agent",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='music', subcategory=None",
+      "winner": "haiku",
+      "reason": "INNA is a pop artist performing at a concert venue (Uber Eats Music Hall), so this is a live concert under 'music'; A's 'live-concert' subcategory is correct and more specific than B's null."
+    },
+    {
+      "id": "7cac34df-6dde-41e8-b20e-6937198a4a89",
+      "title": "Donnerstag, 12. Nov. 2026, 20:00 Uhr Overmono Uber Eats Music Hall mehr erfahren",
+      "source": "discovery_agent",
+      "haiku": "category='nightlife', subcategory='club-night'",
+      "jev": "category='music', subcategory=None",
+      "winner": "jev",
+      "reason": "Overmono is an electronic live act playing a ticketed 20:00 concert at a concert hall (Uber Eats Music Hall), so this is a live music event rather than a club night; A's category is right (ideally with subcategory 'electronic' instead of null), while B's nightlife/club-night mislabels a concert as a club event."
+    },
+    {
+      "id": "981b5ba3-d97c-4851-8c70-ad7071a60300",
+      "title": "Samstag, 12. Dez. 2026, 20:00 Uhr ELIF Uber Eats Music Hall mehr erfahren",
+      "source": "discovery_agent",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='music', subcategory=None",
+      "winner": "haiku",
+      "reason": "ELIF is a German pop singer performing a concert at a music hall, so 'music' with 'live-concert' is the most specific valid subcategory (rock-pop would also be acceptable); leaving subcategory null when a clear fit exists is less correct."
+    },
+    {
+      "id": "a07f3a78-b1ef-4844-b1fa-50d8423f69e9",
+      "title": "Freitag, 20. Nov. 2026, 20:00 Uhr Freya Skye Uber Eats Music Hall mehr erfahren",
+      "source": "discovery_agent",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='music', subcategory=None",
+      "winner": "haiku",
+      "reason": "Freya Skye is a singer performing at Uber Eats Music Hall, a concert venue, so this is a live concert under music; B's subcategory is a valid, more specific label while A's null is unnecessarily vague."
+    },
+    {
+      "id": "aa110a0d-ede4-4215-953e-855e66975372",
+      "title": "13.04.2027 Luna Simao (verschoben aus 2026)",
+      "source": "discovery_agent",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='music', subcategory=None",
+      "winner": "haiku",
+      "reason": "Luna Simao is a singer-songwriter and a dated, rescheduled artist-named show at a music venue is clearly a live concert, so 'live-concert' is the appropriate subcategory rather than null."
+    },
+    {
+      "id": "b0fd1e54-a569-4a18-ba2c-b371ef31a9c5",
+      "title": "REPEAT + MÜDE",
+      "source": "discovery_agent",
+      "haiku": "category='nightlife', subcategory='club-night'",
+      "jev": "category='nightlife', subcategory=None",
+      "winner": "both",
+      "reason": "Loge. is a Berlin techno club and 'REPEAT + MÜDE' reads as a DJ/act lineup, so nightlife/club-night is the best inference, but with no description a null subcategory is also an acceptable conservative choice."
+    },
+    {
+      "id": "b62e0794-9233-4920-9daf-0a2c8b761eb9",
+      "title": "03.04.2027 Yorick Thiede - Polygon",
+      "source": "discovery_agent",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='music', subcategory=None",
+      "winner": "neither",
+      "reason": "Yorick Thiede is a techno DJ/producer and Modus Berlin is an electronic music club, so this is a DJ/club night under rule 3 (nightlife → club-night), not a live concert; even if read as music, the fitting subcategory would be 'electronic', which neither A nor B chose."
+    },
+    {
+      "id": "b88516ef-91e3-4bde-a8c4-1a0e7ba002bc",
+      "title": "22.10.2026 RUE OBERKAMPF",
+      "source": "discovery_agent",
+      "haiku": "category='nightlife', subcategory='club-night'",
+      "jev": "category='nightlife', subcategory=None",
+      "winner": "neither",
+      "reason": "Rue Oberkampf is a touring post-punk/darkwave band, so this is a live concert and per rule 2 belongs in 'music' regardless of the club venue, making both 'nightlife' labels wrong."
+    },
+    {
+      "id": "cc37ff45-de9f-4614-8cb9-57c22a41c16b",
+      "title": "Samstag, 28. Nov. 2026, 20:00 Uhr Schrotthagen Uber Eats Music Hall mehr erfahre",
+      "source": "discovery_agent",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='music', subcategory=None",
+      "winner": "both",
+      "reason": "A 20:00 show by the band Schrotthagen at a dedicated concert venue (Uber Eats Music Hall) is clearly a music event; 'live-concert' is the better-fitting subcategory, but with no description null is also an acceptable value, so both label pairs are valid."
+    },
+    {
+      "id": "cd810970-11a9-48f9-b007-5c96ce03b11a",
+      "title": "Sonntag, 08. Nov. 2026, 20:00 Uhr Omah Lay Uber Eats Music Hall mehr erfahren",
+      "source": "discovery_agent",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='music', subcategory='hip-hop'",
+      "winner": "haiku",
+      "reason": "Omah Lay is a Nigerian Afrobeats/afro-fusion artist performing a concert at a music hall, so 'music' is correct and 'live-concert' is the accurate subcategory, whereas 'hip-hop' mislabels his genre."
+    },
+    {
+      "id": "cf02b53c-fece-4f3c-97d2-d37756d6ee3d",
+      "title": "Samstag, 10. Okt. 2026, 20:45 Uhr Ebi Uber Eats Music Hall mehr erfahren",
+      "source": "discovery_agent",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='music', subcategory=None",
+      "winner": "haiku",
+      "reason": "Ebi is a Persian pop singer performing at the Uber Eats Music Hall concert venue, so this is a live concert; B correctly assigns the determinable subcategory while A leaves it unnecessarily null."
+    },
+    {
+      "id": "e2489385-1e49-45a1-a8f8-adfbadf5cfee",
+      "title": "Freitag, 06. Nov. 2026, 20:00 Uhr Mehnersmoos Uber Eats Music Hall mehr erfahren",
+      "source": "discovery_agent",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='music', subcategory=None",
+      "winner": "haiku",
+      "reason": "Mehnersmoos (a German rap act) performing at the Uber Eats Music Hall concert venue is a live concert, so 'music' with 'live-concert' (hip-hop would also be acceptable) is correct and more informative than a null subcategory."
+    },
+    {
+      "id": "e32570b1-cb2e-4ecb-b0c6-ba2d3cd51712",
+      "title": "Donnerstag, 10. Dez. 2026, 20:00 Uhr Markus Krebs Uber Eats Music Hall mehr erfa",
+      "source": "discovery_agent",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='music', subcategory=None",
+      "winner": "neither",
+      "reason": "Markus Krebs is a German stand-up comedian, so per rule 8 the primary activity is comedy → nightlife/comedy, regardless of the 'Music Hall' venue name (rule 1)."
+    },
+    {
+      "id": "e4f8a2d7-833d-47fd-b7da-e20a65db6c87",
+      "title": "Samstag, 08. Mai 2027, 19:30 Uhr Clara Lösel Uber Eats Music Hall mehr erfahren",
+      "source": "discovery_agent",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='music', subcategory=None",
+      "winner": "haiku",
+      "reason": "Clara Lösel is a singer-songwriter performing at a dedicated concert venue, so this is clearly a live concert and the specific 'live-concert' subcategory is correct rather than leaving it null."
+    },
+    {
+      "id": "f1adff7b-572d-48d7-aed8-d07be28b10d2",
+      "title": "Sonntag, 10. Okt. 2027, 14:00 Uhr Meister Eder und sein Pumuckl Uber Eats Music ",
+      "source": "discovery_agent",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='family', subcategory=None",
+      "winner": "haiku",
+      "reason": "'Meister Eder und sein Pumuckl' is a well-known children's stage show, so it is 'family' under rule 12, and 'kids-program' is the fitting listed subcategory, making B more complete than A's null."
+    },
+    {
+      "id": "2a7dff0f-4795-4469-b516-37fe5947f68c",
+      "title": "Atem sei Klang! Breathwork mit Gongreise - Jakob und Dana",
+      "source": "eventbrite",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='workshops', subcategory=None",
+      "winner": "neither",
+      "reason": "A guided breathwork and gong sound-healing session is a body/mind wellness practice akin to yoga and meditation, which rule 9 routes to outdoors/yoga-fitness rather than workshops (none of whose subcategories—creative, language, digital, dance, craft—fit)."
+    },
+    {
+      "id": "50266072-bc4c-4426-8404-6832085a6d05",
+      "title": "The Berlin AI Conference 2026",
+      "source": "eventbrite",
+      "haiku": "category='meetups', subcategory='tech-startup'",
+      "jev": "category='meetups', subcategory='talk-panel'",
+      "winner": "both",
+      "reason": "This is clearly a meetups-category tech/startup networking conference centered on a panel discussion, so both 'tech-startup' (domain: AI/startup leaders, hosted by Startup Network Europe) and 'talk-panel' (format: panel + Q&A) are defensible, with 'tech-startup' a slightly better fit given the agenda is dominated by networking rather than the 45-minute panel."
+    },
+    {
+      "id": "960d7de3-acc9-4340-b9ec-e9036bfa458d",
+      "title": "IJM Trendwechsel Konferenz 2026",
+      "source": "eventbrite",
+      "haiku": "category='meetups', subcategory='talk-panel'",
+      "jev": "category='meetups', subcategory='activism'",
+      "winner": "jev",
+      "reason": "The event is an NGO conference whose primary purpose is mobilizing attendees against modern slavery through networking, speakers, and workshops, making activism the best fit over the narrower talk-panel label."
+    },
+    {
+      "id": "a620ff26-0a7a-4687-8a92-39bb13132940",
+      "title": "Entrepreneurship Summit 2026 in Berlin",
+      "source": "eventbrite",
+      "haiku": "category='meetups', subcategory='talk-panel'",
+      "jev": "category='meetups', subcategory='tech-startup'",
+      "winner": "jev",
+      "reason": "The event is an entrepreneurship/startup conference whose primary draw is the founder/startup community and ecosystem (source tags: Startups, Entrepreneurs, Founder), making 'tech-startup' the more specific and fitting subcategory than the generic 'talk-panel', though talk-panel is a defensible second choice given the speaker lineup."
+    },
+    {
+      "id": "a7d848d0-5c44-4005-ae15-46d3f640c05b",
+      "title": "Halloween on the Roof - 2 Floors & Skyline",
+      "source": "eventbrite",
+      "haiku": "category='nightlife', subcategory='party'",
+      "jev": "category='nightlife', subcategory='club-night'",
+      "winner": "both",
+      "reason": "This is a Halloween costume party with DJ floors (house/techno plus pop sing-along) running 22–6h on a rooftop, which is squarely nightlife and fits both 'party' (themed costume event, not a regular club) and 'club-night' (multi-floor DJ dance night) equally well."
+    },
+    {
+      "id": "be4fd0c3-2feb-4b64-94a9-81acf22f0441",
+      "title": "Birth Preparation \"Happy Birthing Days\" BERLIN Sat & Sun ENGLISH",
+      "source": "eventbrite",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='workshops', subcategory=None",
+      "winner": "jev",
+      "reason": "A birth preparation course is an educational workshop, but it is not creative, language, digital-skills, dance, or craft, so no listed subcategory fits and null is the correct choice; 'creative-workshop' mislabels it."
+    },
+    {
+      "id": "df2ef544-21b0-404c-9266-41b14857b17a",
+      "title": "Sourdough Bread Workshop",
+      "source": "eventbrite",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='workshops', subcategory='craft'",
+      "winner": "both",
+      "reason": "A hands-on sourdough baking class is a workshop (not a tasting or dining event); the taxonomy has no cooking subcategory, so the generic 'creative-workshop' fits best while 'craft' (artisan bread-making as a hands-on skill) is also a defensible fit."
+    },
+    {
+      "id": "e8c35e57-fc20-4921-8bda-e6c861f2df90",
+      "title": "2. CASHFLOW SECRETS BASIC  - LIVE",
+      "source": "eventbrite",
+      "haiku": "category='meetups', subcategory='talk-panel'",
+      "jev": "category='workshops', subcategory=None",
+      "winner": "jev",
+      "reason": "This is a paid two-day financial-education training seminar (source tag 'Class, Training, or Workshop'), so 'workshops' fits the primary activity; none of the listed workshop subcategories match so null is correct, whereas 'meetups/talk-panel' mischaracterizes a structured course as a panel discussion."
+    },
+    {
+      "id": "fc2c53fa-4ddb-443b-a6df-c550454419ef",
+      "title": "A journey in Song with Sophia Kai & Astra  Laguna",
+      "source": "eventbrite",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='music', subcategory='world-folk'",
+      "winner": "both",
+      "reason": "The event is a live concert of multilingual, tradition-rooted songs with world/ambient influences, so 'music' is clearly correct and both 'world-folk' (slightly more specific given the Sri Lankan/Greek/East African/South African traditional roots) and 'live-concert' are acceptable subcategories."
+    },
+    {
+      "id": "00156479-2f45-4a23-a443-0fb0ea3044e5",
+      "title": "Fahrradkennzeichnung der Direktion 4 Abschnitt 45",
+      "source": "kulturdaten",
+      "haiku": "category='meetups', subcategory=None",
+      "jev": "category='workshops', subcategory=None",
+      "winner": "neither",
+      "reason": "This is a police administrative service (bicycle marking/registration, source tag 'Police'), not a real public event, so per rule 11 it should get quality_score 0.0; neither a generic 'meetups' nor 'workshops' label is a genuine fit, with 'meetups/community' being only a nominal placeholder for a zero-quality listing."
+    },
+    {
+      "id": "0300198e-afcb-4ff7-a534-a0029f899660",
+      "title": "Listening Session",
+      "source": "kulturdaten",
+      "haiku": "category='culture', subcategory='reading'",
+      "jev": "category='music', subcategory='rock-pop'",
+      "winner": "neither",
+      "reason": "This is a moderated listening-and-discussion session where guests share recorded songs and talk about music as cultural practice — not a live concert (so not music/rock-pop) and not a literary reading (so not culture/reading); its primary activity is a talk/discussion format, best fitting meetups/talk-panel."
+    },
+    {
+      "id": "05a29874-1e9b-46fe-b7c7-af7c7715c10a",
+      "title": "Upcycling-Workshop",
+      "source": "kulturdaten",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='workshops', subcategory='craft'",
+      "winner": "both",
+      "reason": "Making beeswax wraps is a hands-on craft/upcycling workshop at a library, so 'workshops' is clearly right; 'craft' fits slightly better but 'creative-workshop' is an equally acceptable label for a creative upcycling session."
+    },
+    {
+      "id": "08c6548e-5f02-49bd-b40f-38aa5113a62a",
+      "title": "Neu! Montags-Spielrunde",
+      "source": "kulturdaten",
+      "haiku": "category='family', subcategory='family-event'",
+      "jev": "category='meetups', subcategory='community'",
+      "winner": "jev",
+      "reason": "This is an open, intergenerational board-game social at a library aimed at adults, families and all ages alike (explicitly offering 'neue Kontakte'), so the primary activity is a community get-together rather than an event specifically for children/families, making meetups/community the better fit, though family-event is a defensible second choice."
+    },
+    {
+      "id": "0f9b9d61-3114-4f97-b274-716822f9550e",
+      "title": "KinderUni Lichtenberg (KUL)",
+      "source": "kulturdaten",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='meetups', subcategory='talk-panel'",
+      "winner": "haiku",
+      "reason": "KinderUni is a lecture explicitly designed for children (source tag Children, addresses 'ihr' kids), so rule 12 makes it family/kids-program rather than an adult talk-panel meetup."
+    },
+    {
+      "id": "108c3ff6-35f8-4a25-9de1-8ffb8d7a0772",
+      "title": "Kammermusikworkshop für Holzbläser",
+      "source": "kulturdaten",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='workshops', subcategory=None",
+      "winner": "haiku",
+      "reason": "A chamber music workshop for woodwind players is a hands-on creative/musical class at a music school, so 'workshops' with the 'creative-workshop' subcategory is the best fit, whereas B's null subcategory is less specific when a valid one clearly applies."
+    },
+    {
+      "id": "17ffba6e-e07f-4765-87f4-e4b3b4a637f0",
+      "title": "Zine-Workshop – Falten, Kleben, Tauschen!",
+      "source": "kulturdaten",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='workshops', subcategory='craft'",
+      "winner": "both",
+      "reason": "A zine-making workshop (folding, gluing, designing booklets) is a hands-on creative craft session, so both 'craft' and 'creative-workshop' are acceptable subcategories under 'workshops', with 'creative-workshop' slightly better capturing the design/creative-media framing."
+    },
+    {
+      "id": "26665304-3be1-4abc-8e57-79f919129c91",
+      "title": "Sprachcafé in der Helene-Nathan-Bibliothek",
+      "source": "kulturdaten",
+      "haiku": "category='meetups', subcategory='community'",
+      "jev": "category='workshops', subcategory='language'",
+      "winner": "both",
+      "reason": "A Sprachcafé is an informal German-practice session (vocabulary, pronunciation, A1–B2) with a strong social/community component, so workshops/language best captures the primary activity while meetups/community is also a defensible reading of its open, unstructured conversational format."
+    },
+    {
+      "id": "27570faf-2e0b-4952-8173-7952494e9926",
+      "title": "Fachgruppenkonzert Streichinstrumente",
+      "source": "kulturdaten",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='music', subcategory='classical'",
+      "winner": "both",
+      "reason": "A string-instrument student recital in a church hall is a live concert whose repertoire is almost certainly classical, so 'classical' is the more specific fit while 'live-concert' is also an acceptable generic label since the genre is not explicitly stated."
+    },
+    {
+      "id": "2997396f-d29d-4e9a-be70-bd2bc83a9f02",
+      "title": "Saatgutbibliothek der Ingeborg-Bachmann-Bibliothek",
+      "source": "kulturdaten",
+      "haiku": "category='workshops', subcategory='craft'",
+      "jev": "category='outdoors', subcategory=None",
+      "winner": "neither",
+      "reason": "A seed library is an ongoing community sharing service (borrow seeds, grow, return) with no instruction or class component (not workshops/craft) and no outdoor activity at the library itself (not outdoors), so it fits best as a meetups/community initiative."
+    },
+    {
+      "id": "464ffe4b-8d12-4cb7-8f4e-2a372755af4b",
+      "title": "Vernissage der Ausstellung „Zwischen dem Möglichen und Unmöglichen tanzt das Leb",
+      "source": "kulturdaten",
+      "haiku": "category='culture', subcategory='gallery'",
+      "jev": "category='culture', subcategory='exhibition'",
+      "winner": "jev",
+      "reason": "A vernissage of a painting exhibition at a women's cultural center is an exhibition opening (rule 5), and 'exhibition' is the more precise subcategory since the venue is a community center, not a gallery per se, though 'gallery' is a close but less accurate fit."
+    },
+    {
+      "id": "4ed52bf2-9573-4c8e-9882-32f668ec5faf",
+      "title": "Fahrradkennzeichnung der Direktion 3 Abschnitt 33",
+      "source": "kulturdaten",
+      "haiku": "category='meetups', subcategory='community'",
+      "jev": "category='meetups', subcategory=None",
+      "winner": "both",
+      "reason": "This is a police bike-registration/administrative service (rule 11 → quality_score 0.0, not a real public event), so the category is only a best-effort fallback; 'meetups' is the closest fit for a local police info-stand, and both the null subcategory and 'community' are acceptable, with 'community' being slightly more informative."
+    },
+    {
+      "id": "06711524-8d27-4f86-98f9-21ddf474ebd9",
+      "title": "SameKind Berlin Founder Dinner",
+      "source": "luma",
+      "haiku": "category='meetups', subcategory='networking'",
+      "jev": "category='meetups', subcategory='tech-startup'",
+      "winner": "both",
+      "reason": "A 'Founder Dinner' on Luma is primarily a founders' networking gathering (the dinner is the vehicle, not the draw), so 'meetups' is right and both 'networking' and 'tech-startup' are defensible subcategories since it targets startup founders."
+    },
+    {
+      "id": "089b8e61-b022-4fb5-a6a6-fc5fe95191b5",
+      "title": "T6 - en textsymfoni",
+      "source": "luma",
+      "haiku": "category='culture', subcategory='theater'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "jev",
+      "reason": "The title 'en textsymfoni' (a text symphony) indicates a text-based cultural/performance work, but with no description it cannot be confirmed as theater versus a reading or performance-art piece, so culture with null subcategory is the defensible label."
+    },
+    {
+      "id": "13990635-b132-422b-9b0b-351d79ef7cee",
+      "title": "FTL Berlin @ Sopra Steria",
+      "source": "luma",
+      "haiku": "category='meetups', subcategory='tech-startup'",
+      "jev": "category='meetups', subcategory=None",
+      "winner": "both",
+      "reason": "With no description, a Luma-hosted gathering at IT consultancy Sopra Steria is best read as a meetup; 'tech-startup' is a reasonable inference from the venue/platform, but null is also defensible given the sparse data."
+    },
+    {
+      "id": "28a5f98e-f759-4f83-aa43-38ee2b98a5df",
+      "title": "Midsommar Rituals",
+      "source": "luma",
+      "haiku": "category='nightlife', subcategory='party'",
+      "jev": "category='culture', subcategory='festival'",
+      "winner": "haiku",
+      "reason": "A one-night Midsommar celebration at a club venue built around DJs, drag/burlesque performances and a live set is a party by primary activity (Rule 3), not an arts festival in the culture sense."
+    },
+    {
+      "id": "6758e5b2-1436-498f-b834-7c0899f79d3d",
+      "title": "Minus One 2026",
+      "source": "luma",
+      "haiku": "category='nightlife', subcategory='party'",
+      "jev": "category='meetups', subcategory='networking'",
+      "winner": "jev",
+      "reason": "The primary activity is investor networking (300+ GPs and LPs gathering before Slush Investor Day), so it fits meetups/networking rather than a nightlife party, despite the drinks framing."
+    },
+    {
+      "id": "80623e17-8c47-4d2a-8e86-8a3ac0491eb5",
+      "title": "Find Your Cofounder",
+      "source": "luma",
+      "haiku": "category='meetups', subcategory='networking'",
+      "jev": "category='meetups', subcategory='tech-startup'",
+      "winner": "both",
+      "reason": "A cofounder-matching event is a startup community networking meetup, so both 'networking' and 'tech-startup' are defensible subcategories, with 'tech-startup' slightly more specific to the founder focus."
+    },
+    {
+      "id": "84aaffee-bc14-4349-abc6-e147a004ce0f",
+      "title": "Silent Book Club Session n. 43 - Gleisdreieck Park!",
+      "source": "luma",
+      "haiku": "category='culture', subcategory='reading'",
+      "jev": "category='meetups', subcategory='community'",
+      "winner": "jev",
+      "reason": "A Silent Book Club is a community gathering where attendees read their own books together, not a public literary reading/author event, so the primary activity is a social meetup rather than a culture 'reading'."
+    },
+    {
+      "id": "8d38991c-e95a-4c82-bae1-a14adefd227f",
+      "title": "OWASP Helsinki Chapter meetup #48",
+      "source": "luma",
+      "haiku": "category='meetups', subcategory='tech-startup'",
+      "jev": "category='meetups', subcategory='networking'",
+      "winner": "haiku",
+      "reason": "OWASP is a software security community whose chapter meetups center on technical talks, so the primary activity is a tech meetup rather than general networking."
+    },
+    {
+      "id": "a952b078-44ac-4952-b31d-598e6aee5b47",
+      "title": "CONTENT & COMMUNITY DAY 2026 | ARC STUDIO x EPICENTER HELSINKI",
+      "source": "luma",
+      "haiku": "category='meetups', subcategory='tech-startup'",
+      "jev": "category='meetups', subcategory='community'",
+      "winner": "haiku",
+      "reason": "This is a B2B marketing/business day at Epicenter (a startup and innovation hub) aimed at brands and buyers, so the business/startup subcategory fits; 'community' in the taxonomy refers to grassroots/neighborhood community events, not the marketing sense of 'community' in the title."
+    },
+    {
+      "id": "cb301dae-bc24-4bb0-bbf6-f84e4ebb0da5",
+      "title": "Welcome to the Future of Women’s Health: Eir Accelerator Kick-Off with Jessica F",
+      "source": "luma",
+      "haiku": "category='meetups', subcategory='talk-panel'",
+      "jev": "category='meetups', subcategory='tech-startup'",
+      "winner": "jev",
+      "reason": "The event is a Slush side event marking a startup accelerator kick-off, so the primary activity is a tech/startup ecosystem gathering rather than a talk or panel per se, making 'tech-startup' the better subcategory (though 'talk-panel' is a defensible second choice given the featured speaker)."
+    },
+    {
+      "id": "d4711cc2-b421-45a5-9d1a-98e71ee3a29a",
+      "title": "Day 0 Founders Lunch @ Slush 2026",
+      "source": "luma",
+      "haiku": "category='meetups', subcategory='networking'",
+      "jev": "category='meetups', subcategory='tech-startup'",
+      "winner": "both",
+      "reason": "A founders' lunch at a startup conference is a networking meetup within the tech/startup scene, so both 'tech-startup' and 'networking' are acceptable subcategories, with 'tech-startup' slightly more specific."
+    },
+    {
+      "id": "dc46824e-2fc8-4a91-a8a6-61e7546c2337",
+      "title": "How will People Teams work in 2030?",
+      "source": "luma",
+      "haiku": "category='meetups', subcategory='talk-panel'",
+      "jev": "category='meetups', subcategory='community'",
+      "winner": "jev",
+      "reason": "The event explicitly gathers the Helsinki People Professionals communities for a collaborative white-paper writing session, which is a community meetup rather than a speaker-led talk or panel."
+    },
+    {
+      "id": "fa2ce201-1847-41e4-bfe6-521f4fff6a96",
+      "title": "Sessions: Berlin",
+      "source": "luma",
+      "haiku": "category='meetups', subcategory='talk-panel'",
+      "jev": "category='meetups', subcategory='activism'",
+      "winner": "jev",
+      "reason": "The event is a 1% for the Planet session explicitly framed around inspiring environmental action and growing a movement through community engagement, which fits meetups/activism better than talk-panel since no talk or panel format is indicated."
+    },
+    {
+      "id": "073833e1-c4f0-4ad5-98c9-a247f021bae6",
+      "title": "Unendliche Weiten",
+      "source": "planetarium",
+      "haiku": "category='culture', subcategory='exhibition'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "jev",
+      "reason": "A live-moderated planetarium dome show is a cultural/science presentation that fits none of the culture subcategories cleanly (it is not an exhibition of displayed objects), so 'culture' with null subcategory is correct and 'exhibition' is a mislabel."
+    },
+    {
+      "id": "09ea63fa-350b-40bc-b2e4-9ff7a159f39d",
+      "title": "Queen Heaven",
+      "source": "planetarium",
+      "haiku": "category='culture', subcategory='exhibition'",
+      "jev": "category='music', subcategory='rock-pop'",
+      "winner": "neither",
+      "reason": "This is a seated 360°-fulldome laser/video show using recorded Queen music, not a live concert (so not 'music') and not an exhibition; as a projected multimedia screening in a planetarium dome it fits culture/cinema best."
+    },
+    {
+      "id": "12464c66-5f4a-4653-b9c6-be9bc7476b90",
+      "title": "Führung durch die Archenhold-Sternwarte",
+      "source": "planetarium",
+      "haiku": "category='outdoors', subcategory='walking-tour'",
+      "jev": "category='meetups', subcategory='talk-panel'",
+      "winner": "neither",
+      "reason": "A guided indoor tour of a historic observatory (telescope, meteorite, Einstein hall) is a museum/science-heritage visit, not a networking talk-panel nor an outdoor walking tour, so it belongs under culture with the closest subcategory exhibition."
+    },
+    {
+      "id": "1635fc03-6da9-4403-98b1-1fd9334acade",
+      "title": "Beobachtungsnacht auf der Wilhelm-Foerster-Sternwarte",
+      "source": "planetarium",
+      "haiku": "category='outdoors', subcategory='walking-tour'",
+      "jev": "category='outdoors', subcategory=None",
+      "winner": "neither",
+      "reason": "A guided observatory night (Führung plus telescope observation at a science institution, held indoors in bad weather) is an educational cultural visit rather than a walking tour or outdoor sport/fitness event, so 'outdoors' misfits and no culture subcategory applies cleanly."
+    },
+    {
+      "id": "17c44d59-b988-4306-8650-03e40ea7f36c",
+      "title": "»Klänge und Signale« – Workshop in der Lernwerkstatt",
+      "source": "planetarium",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='workshops', subcategory=None",
+      "winner": "neither",
+      "reason": "The event is explicitly an offer for school classes (Sek I/II), i.e. a program for children/teens, so rule 12 routes it to family/kids-program rather than workshops; and even within workshops, a STEM science workshop is not a 'creative-workshop'."
+    },
+    {
+      "id": "1e68190c-9465-4d97-a0c2-a4d40dc5f215",
+      "title": "Aurora – Wunder des Nordlichts",
+      "source": "planetarium",
+      "haiku": "category='culture', subcategory='cinema'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "haiku",
+      "reason": "A 360° fulldome planetarium show of astrophotography footage with live narration is a screening-style cultural event, so 'culture/cinema' is the closest valid subcategory and more informative than leaving it null (A is not wrong, just less specific)."
+    },
+    {
+      "id": "22f14ab0-0ee8-4913-b3cb-3f94db0e20c1",
+      "title": "Führung durch die Archenhold-Sternwarte",
+      "source": "planetarium",
+      "haiku": "category='outdoors', subcategory='walking-tour'",
+      "jev": "category='meetups', subcategory='talk-panel'",
+      "winner": "neither",
+      "reason": "This is an indoor guided tour of a historic observatory/science museum (telescope, meteorites, Einstein hall), which is an educational museum visit under culture rather than a talk/panel meetup or an outdoor walking tour."
+    },
+    {
+      "id": "6e90d882-99e9-44ad-b034-df8ec3d2a63a",
+      "title": "Weihnachtssterne basteln",
+      "source": "planetarium",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='workshops', subcategory='craft'",
+      "winner": "jev",
+      "reason": "The primary activity is a hands-on crafting session (basteln) and the listing contains none of the explicit children/family keywords required by rule 12, so it is a craft workshop rather than a family event."
+    },
+    {
+      "id": "81929cbd-fe14-477f-b644-ce9ec57bac8f",
+      "title": "Sternstunde",
+      "source": "planetarium",
+      "haiku": "category='outdoors', subcategory='outdoor-cinema'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "jev",
+      "reason": "A live-moderated planetarium show is an indoor educational/cultural program with no fitting subcategory, so culture/null is correct, while B's 'outdoor-cinema' is wrong since it is neither outdoors nor a film screening."
+    },
+    {
+      "id": "87063c1f-2893-4753-a848-b94ea683ba08",
+      "title": "Imagine Dragons: Dimensional Voyager",
+      "source": "planetarium",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "jev",
+      "reason": "This is a pre-recorded immersive fulldome planetarium show set to Imagine Dragons' music, not a live concert, so the primary activity is watching a projected visual show (culture, closest to cinema); A's culture/null is acceptable while B's live-concert is factually wrong."
+    },
+    {
+      "id": "8e0b9be1-767d-4ad5-9c76-ece72d8c3115",
+      "title": "Galaktische Begegnungen",
+      "source": "planetarium",
+      "haiku": "category='outdoors', subcategory='outdoor-cinema'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "jev",
+      "reason": "A planetarium dome show with a live-presented segment is an indoor science/cultural screening-style event, not outdoor cinema, so culture (no exact subcategory fit) is correct and B is wrong."
+    },
+    {
+      "id": "8fb957ca-ec0c-4aba-8db4-959c604920f2",
+      "title": "Nacht auf der Sternwarte",
+      "source": "planetarium",
+      "haiku": "category='outdoors', subcategory='outdoor-cinema'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "jev",
+      "reason": "A guided telescope observation night at a public observatory is an educational/cultural program, not an outdoor cinema screening, so B's culture/null fits while A's outdoors/outdoor-cinema is clearly wrong."
+    },
+    {
+      "id": "a182c683-aa50-4d00-9e49-c1cbce838a8a",
+      "title": "Sternstunde",
+      "source": "planetarium",
+      "haiku": "category='outdoors', subcategory='outdoor-cinema'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "jev",
+      "reason": "A live-moderated planetarium show is an indoor cultural/educational performance, not outdoor cinema, so 'culture' with no fitting subcategory is correct and B is wrong."
+    },
+    {
+      "id": "a6b55a3c-4f07-4213-b175-464e98d9de88",
+      "title": "The Game is on – Gaming Event im Planetarium",
+      "source": "planetarium",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "jev",
+      "reason": "This is an interactive 360°-fulldome gaming show for the general public at a planetarium, which best fits 'culture' (no listed subcategory fits well), and nothing marks it as explicitly for children—the 'Kindersicherung' note is only a device-settings instruction, so 'family/kids-program' is unjustified."
+    },
+    {
+      "id": "a768d61a-a5ac-442b-8288-03effed82b05",
+      "title": "Die große Abenteuerreise durchs Sonnensystem",
+      "source": "planetarium",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "jev",
+      "reason": "A live-moderated planetarium show is a cultural/edutainment event with no matching subcategory, and the listing contains none of the explicit children/family markers (e.g. 'für Kinder', 'Kinder...') required by rule 12 to assign 'family', so B over-infers from tone alone."
+    },
+    {
+      "id": "ad5ccbfc-f378-4ffc-8ddf-9c88c32b6b7f",
+      "title": "Beobachtungsnacht auf der Wilhelm-Foerster-Sternwarte",
+      "source": "planetarium",
+      "haiku": "category='outdoors', subcategory='outdoor-cinema'",
+      "jev": "category='outdoors', subcategory=None",
+      "winner": "jev",
+      "reason": "A guided night-sky observation with rooftop telescopes fits 'outdoors' best among the available categories, but none of its listed subcategories applies, so null is right and 'outdoor-cinema' in B is simply wrong (no film screening)."
+    },
+    {
+      "id": "d4273fe0-a816-4860-b7c9-55ec482f3375",
+      "title": "Imagine Dragons: Dimensional Voyager",
+      "source": "planetarium",
+      "haiku": "category='culture', subcategory='exhibition'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "jev",
+      "reason": "This is a timed immersive fulldome planetarium show set to recorded Imagine Dragons music (not a live concert, so not 'music'), which belongs in 'culture'; it is not an exhibition, so B's subcategory is wrong, and null (or arguably 'cinema' for a dome screening) is the defensible subcategory."
+    },
+    {
+      "id": "ec3b98c1-d1a0-4351-8ea1-93edafd619e6",
+      "title": "Sternstunde",
+      "source": "planetarium",
+      "haiku": "category='culture', subcategory='exhibition'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "jev",
+      "reason": "A live-moderated planetarium dome show is a cultural/educational event with no exact subcategory match (it is neither an exhibition nor cinema/theater), so 'culture' with null subcategory is correct and 'exhibition' is a misfit."
+    },
+    {
+      "id": "f0576307-ebcd-4e65-90d2-3f59b5fdccab",
+      "title": "Starry Night",
+      "source": "planetarium",
+      "haiku": "category='culture', subcategory='exhibition'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "jev",
+      "reason": "A live-presented planetarium dome show is a cultural/educational show, not an exhibition (no displayed objects to browse), and none of the culture subcategories fit cleanly, so culture with null subcategory is correct while B's 'exhibition' mislabels the format."
+    },
+    {
+      "id": "f18458a6-7360-4a5f-8d10-fbc19cbf9604",
+      "title": "Wir bauen einen Mars-Rover (Gruppen-Workshop)",
+      "source": "planetarium",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='workshops', subcategory=None",
+      "winner": "neither",
+      "reason": "The event is explicitly for school classes (\"Programm speziell für Schulklassen\"), a LEGO rover-building program for children at the observatory, so rule 12 routes it to family/kids-program rather than workshops."
+    },
+    {
+      "id": "02b0d28d-6452-43ce-9746-320ad92c2e3c",
+      "title": "Berlin Science Week 2026 | Tag 9",
+      "source": "rausgegangen",
+      "haiku": "category='meetups', subcategory='talk-panel'",
+      "jev": "category='culture', subcategory='festival'",
+      "winner": "both",
+      "reason": "The listing is an umbrella day-overview of a city-wide science festival (source tag feste-und-festival) whose program is heterogeneous (book talk, bar talks, museum tours/workshops, summit), so culture/festival fits the listing as a whole, while meetups/talk-panel is also defensible since the recommended events are predominantly science talks."
+    },
+    {
+      "id": "0f39cc4f-eba9-49e1-a016-83529a329dad",
+      "title": "Khalid | It's Always Summer Somewhere Tour",
+      "source": "rausgegangen",
+      "haiku": "category='music', subcategory='rock-pop'",
+      "jev": "category='music', subcategory='live-concert'",
+      "winner": "both",
+      "reason": "A Khalid pop concert is unambiguously 'music'; 'rock-pop' best captures the smooth pop genre described, but 'live-concert' is also a valid listed subcategory for a touring artist's show, so both label pairs are acceptable."
+    },
+    {
+      "id": "1d53f6cb-8910-47e1-acb0-7944f87600a2",
+      "title": "Mediterrane Spitzenküche",
+      "source": "rausgegangen",
+      "haiku": "category='food', subcategory='tasting'",
+      "jev": "category='workshops', subcategory=None",
+      "winner": "jev",
+      "reason": "The primary activity is a hands-on, instructor-led cooking course (Kochkurs/Workshop) where attendees learn techniques, which is a workshop rather than a tasting or dining event; A's null subcategory is acceptable, though creative-workshop fits best, while B's 'tasting' misdescribes the event."
+    },
+    {
+      "id": "259336cf-494b-4139-9f55-906ee66cf24e",
+      "title": "Kolumbianisch Hausgemacht!",
+      "source": "rausgegangen",
+      "haiku": "category='food', subcategory='pop-up'",
+      "jev": "category='workshops', subcategory=None",
+      "winner": "jev",
+      "reason": "The event is a hands-on Kochkurs where attendees learn to cook Colombian dishes, so the primary activity is a class (workshops, no exact subcategory match → null, though creative-workshop would be tolerable), not a pop-up dining event as B claims."
+    },
+    {
+      "id": "40532b1a-c191-4ced-adc0-4524c76ad2e1",
+      "title": "Autumn market",
+      "source": "rausgegangen",
+      "haiku": "category='markets', subcategory='design-market'",
+      "jev": "category='markets', subcategory='craft-market'",
+      "winner": "both",
+      "reason": "A shopping market of handcrafted ceramics, jewelry, felted hats and candles curated by designers fits both design-market and craft-market equally well, so either subcategory is acceptable under the markets category."
+    },
+    {
+      "id": "7ed72687-c6a0-478c-9dc7-0ed372c44ee0",
+      "title": "Go.Play with Pablo Cornejo (Chile)",
+      "source": "rausgegangen",
+      "haiku": "category='nightlife', subcategory='club-night'",
+      "jev": "category='nightlife', subcategory='bar-event'",
+      "winner": "both",
+      "reason": "It is a free techno/house/minimal DJ set at a self-described dance bar, so nightlife is clearly right and either club-night (the DJ/dance activity per rule 1) or bar-event (the bar venue with daily resident DJs) is a defensible subcategory."
+    },
+    {
+      "id": "890656cf-666f-41c5-a46e-fd69356e2e43",
+      "title": "OPERNFEST: Die Zauberflöte - Mozart",
+      "source": "rausgegangen",
+      "haiku": "category='culture', subcategory='theater'",
+      "jev": "category='culture', subcategory='festival'",
+      "winner": "haiku",
+      "reason": "The listing is a single staged opera performance (Musiktheater) at a theater venue, so culture/theater fits; 'festival' describes the umbrella OPERNFEST series rather than this specific show the attendee is buying a ticket for."
+    },
+    {
+      "id": "927e66df-7a51-42d9-b126-2c5078db19e2",
+      "title": "Trauer unter Kontrolle - Der Flugzeugabsturz von 1986 in Berlin-Bohnsdorf und di",
+      "source": "rausgegangen",
+      "haiku": "category='meetups', subcategory='talk-panel'",
+      "jev": "category='culture', subcategory='reading'",
+      "winner": "jev",
+      "reason": "The primary activity is an author reading from his book (Buchautor liest vor) with documents and Q&A, which fits culture/reading rather than a networking or panel meetup."
+    },
+    {
+      "id": "9a78ce42-3af9-4d7b-b7fe-21c26c11db52",
+      "title": "After Work // Lebensmittel retten bei der Berliner Tafel",
+      "source": "rausgegangen",
+      "haiku": "category='meetups', subcategory='activism'",
+      "jev": "category='meetups', subcategory='community'",
+      "winner": "jev",
+      "reason": "The primary activity is hands-on charitable volunteering (sorting rescued food at the Tafel), which is a community service event rather than political activism or a protest/campaign."
+    },
+    {
+      "id": "bfe4a452-8240-4ddc-b968-c8a8264ae1ac",
+      "title": "🍕 TRUE ITALIAN PIZZA WEEK 2026 BERLIN 🍕",
+      "source": "rausgegangen",
+      "haiku": "category='food', subcategory='tasting'",
+      "jev": "category='food', subcategory='dining-event'",
+      "winner": "both",
+      "reason": "A city-wide pizza week where selected pizzerias serve special creations is clearly a food event; 'dining-event' best fits restaurant-based special menus, but 'tasting' is also defensible given the 'probier Dich quer durch' framing, so both are acceptable."
+    },
+    {
+      "id": "d2b65914-abc4-4763-b5c4-72d8e43f475c",
+      "title": "ON AIR ON FIRE",
+      "source": "rausgegangen",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='culture', subcategory='theater'",
+      "winner": "jev",
+      "reason": "This is a theater play (rausgegangen:theater tag, director/ensemble/stage) about 1989 East Berlin with no explicit kids/family keywords in title or description; the venue being a youth theater does not override rule 1, so culture/theater is correct and family/kids-program is not supported."
+    },
+    {
+      "id": "d83ec090-6530-49e7-9c02-2658de6ca415",
+      "title": "Confusion is Not Magic – Special Guests Takeover!",
+      "source": "rausgegangen",
+      "haiku": "category='nightlife', subcategory='bar-event'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "jev",
+      "reason": "The primary activity is a ticketed stage magic performance (a show, not a bar/social event or DJ night), which fits culture as a theater-style performance; A's nightlife/bar-event mislabels it by venue vibe rather than activity, while B's culture category is correct though 'theater' would be a more precise subcategory than null."
+    },
+    {
+      "id": "f6bf32b4-346b-4853-a885-c097c92babdf",
+      "title": "NATURANA Personal Bra Fitting",
+      "source": "rausgegangen",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='markets', subcategory=None",
+      "winner": "jev",
+      "reason": "A personal bra fitting at KaDeWe is a retail/shopping promotion where attendees try and buy a product, not a creative workshop where something is made, so 'markets' (shopping-focused) with no exact subcategory fits best."
+    },
+    {
+      "id": "2a8e7250-2de6-4f76-bf63-23f14694135c",
+      "title": "Hidden Variables",
+      "source": "resident_advisor",
+      "haiku": "category='nightlife', subcategory='club-night'",
+      "jev": "category='music', subcategory='jazz-blues'",
+      "winner": "haiku",
+      "reason": "Golden Gate is a Berlin techno club and Resident Advisor lists DJ lineups (RUJA, Sabrina Hawk, Bee Lincoln), so this is a DJ-driven club night under rule 3, not a jazz concert."
+    },
+    {
+      "id": "465d902b-c3c1-45dd-ae50-a3b3780fb6f6",
+      "title": "Stimmen in Aspik - Die Schlager-Party",
+      "source": "resident_advisor",
+      "haiku": "category='nightlife', subcategory='party'",
+      "jev": "category='nightlife', subcategory='club-night'",
+      "winner": "both",
+      "reason": "A weekly Schlager dance party at a Berlin discothek/club is clearly nightlife, and both 'club-night' and 'party' fit this recurring DJ dance event, with 'party' matching the title slightly more literally."
+    },
+    {
+      "id": "853b6df6-a717-4d59-909a-e100dd8455bf",
+      "title": "SLIME x XANTI",
+      "source": "resident_advisor",
+      "haiku": "category='nightlife', subcategory='club-night'",
+      "jev": "category='music', subcategory='electronic'",
+      "winner": "both",
+      "reason": "A Resident Advisor lineup event at a bar with 'experimental/noise' tags is ambiguous between a DJ-driven night (nightlife/club-night) and live experimental electronic acts (music/electronic), and the sparse data doesn't rule either out, so both labels are defensible with the RA listing format slightly favoring nightlife."
+    },
+    {
+      "id": "87d9a0d8-35e9-4801-952d-bdb65c201b69",
+      "title": "Hip Hop culture day/Hip hop Kulturtag",
+      "source": "resident_advisor",
+      "haiku": "category='music', subcategory='hip-hop'",
+      "jev": "category='nightlife', subcategory='club-night'",
+      "winner": "jev",
+      "reason": "A late-night (22h) multi-element club event at Humboldthain Club with DJs, breakdance and a two-floor after party is a dance/DJ-driven club night (rule 3), not a live hip-hop concert."
+    },
+    {
+      "id": "90b5e7e1-e21f-45f1-b341-32c6fad7e7f4",
+      "title": "Satelliet Studio",
+      "source": "resident_advisor",
+      "haiku": "category='nightlife', subcategory='club-night'",
+      "jev": "category='nightlife', subcategory=None",
+      "winner": "both",
+      "reason": "The event comes from Resident Advisor (an electronic/club event platform) so 'nightlife' is correct, and with only a 'tba' description either 'club-night' (the typical RA listing) or null (insufficient detail) is a defensible subcategory."
+    },
+    {
+      "id": "adb05269-d029-46e8-9d40-5732b74e9af8",
+      "title": "SOUON",
+      "source": "resident_advisor",
+      "haiku": "category='nightlife', subcategory='club-night'",
+      "jev": "category='nightlife', subcategory='bar-event'",
+      "winner": "both",
+      "reason": "A Resident Advisor listing at TORTE BAR with no description is almost certainly a DJ night, so 'nightlife' is clear; with the activity unspecified, 'club-night' (primary activity, per rule 1) and 'bar-event' (bar venue) are both defensible, with club-night slightly preferred."
+    },
+    {
+      "id": "b0ff9741-3cd2-4c55-b93c-065a9eb85268",
+      "title": "Deep Dive: Dark Entries",
+      "source": "resident_advisor",
+      "haiku": "category='music', subcategory='electronic'",
+      "jev": "category='meetups', subcategory='community'",
+      "winner": "haiku",
+      "reason": "The primary activity is a themed vinyl listening session of new wave/EBM/dark electronic records, so attendees come for the music itself (not a DJ/dance night and not primarily networking), making music/electronic the best fit while the community framing is just the format."
+    },
+    {
+      "id": "bc8b62dd-5fb0-4f6e-9146-a1357984012e",
+      "title": "SOUND METAPHORS FESTIVAL PART 1",
+      "source": "resident_advisor",
+      "haiku": "category='music', subcategory='live-concert'",
+      "jev": "category='nightlife', subcategory='club-night'",
+      "winner": "both",
+      "reason": "The festival explicitly centers on live electronic acts (Cortini, Grand River, Fitoussi) spanning ambient/experimental/techno, making music (live-concert or electronic) the better primary fit, but as a multi-night techno/dance event at Berghain rule 3 also makes nightlife/club-night a defensible label."
+    },
+    {
+      "id": "bfb25599-3639-4ed2-884b-cad23acd3755",
+      "title": "Festival of Lights in Concert",
+      "source": "resident_advisor",
+      "haiku": "category='nightlife', subcategory='club-night'",
+      "jev": "category='music', subcategory='electronic'",
+      "winner": "jev",
+      "reason": "The event is a concert-style ambient/electronic performance ('abseits ihrer Club-Sets', not a dance-focused club night) with light projections at the Berliner Dom, so music/electronic is correct, while B's null category violates the requirement to pick exactly one category."
+    },
+    {
+      "id": "c20b2028-896a-4f6b-8ba3-e83ef9ea4f8f",
+      "title": "Chain Reaction",
+      "source": "resident_advisor",
+      "haiku": "category='nightlife', subcategory='club-night'",
+      "jev": "category='nightlife', subcategory='club-night'",
+      "winner": "jev",
+      "reason": "A seven-hour DJ-driven house music night at a club with a dancefloor focus is a DJ/dance event, which rule 3 assigns to nightlife with subcategory club-night; A assigns no category at all."
+    },
+    {
+      "id": "c7ec4add-add9-4a83-807e-dcf96a675dfe",
+      "title": "Pulse Index 003: Static Channel (album release), Katrinø Brægnum, Raw Image",
+      "source": "resident_advisor",
+      "haiku": "category='nightlife', subcategory='club-night'",
+      "jev": "category='music', subcategory='electronic'",
+      "winner": "jev",
+      "reason": "The event is a live electronic/ambient AV concert with an album release and live hardware techno sets (performance-focused, not a DJ club night), so music/electronic is correct and B's null labels are not acceptable."
+    },
+    {
+      "id": "e454a580-0dcb-4a1d-9fc4-e5b51472e27e",
+      "title": "Klappnacht",
+      "source": "resident_advisor",
+      "haiku": "category='nightlife', subcategory='club-night'",
+      "jev": "category='nightlife', subcategory='club-night'",
+      "winner": "jev",
+      "reason": "Zur Klappe is a Berlin club and the event is listed on Resident Advisor (electronic/club platform), so 'Klappnacht' is a club night under nightlife; A assigns no category, which is not a valid label."
+    },
+    {
+      "id": "ed868734-0f07-4ed3-aa2e-b4d4e441d5a3",
+      "title": "Unterwelt Festival",
+      "source": "resident_advisor",
+      "haiku": "category='nightlife', subcategory='party'",
+      "jev": "category='music', subcategory='electronic'",
+      "winner": "jev",
+      "reason": "The primary activity is a line-up of 15 live acts playing darkwave/EBM/minimal synth concerts (Rule 2: live music → music), with the dark-electronics genre fitting the 'electronic' subcategory, while the post-midnight dancefloor is secondary; B's null category is not a valid label."
+    },
+    {
+      "id": "f413efb0-6070-4758-8814-9d84b0f397b0",
+      "title": "Bodies & Baddies - Community Edition Berlin",
+      "source": "resident_advisor",
+      "haiku": "category='nightlife', subcategory='party'",
+      "jev": "category='nightlife', subcategory='club-night'",
+      "winner": "jev",
+      "reason": "A queer DJ-driven party at Metropol running 23:00–05:00 with a DJ line-up is a dance-focused club event, which per rule 3 is nightlife/club-night; B assigns no category and is therefore wrong."
+    },
+    {
+      "id": "f95566ff-6d0f-4667-998a-777d14054c4f",
+      "title": "Giri x RAWA Club",
+      "source": "resident_advisor",
+      "haiku": "category='nightlife', subcategory='club-night'",
+      "jev": "category='nightlife', subcategory='club-night'",
+      "winner": "jev",
+      "reason": "A Resident Advisor listing titled 'Giri x RAWA Club' at a club venue is a DJ/club night, which rule 3 maps to nightlife/club-night; a null category is not acceptable when the source and title clearly indicate a club event."
+    },
+    {
+      "id": "fbb63e2b-15f4-4add-8ae7-84e8c16d28db",
+      "title": "Pain Management: Babe Roots (live), Toma Kami, Hermeneia, aeriform",
+      "source": "resident_advisor",
+      "haiku": "category='nightlife', subcategory='club-night'",
+      "jev": "category='nightlife', subcategory='club-night'",
+      "winner": "jev",
+      "reason": "This is a DJ/dance-focused club night at OHM (dub, footwork, dancefloor sets) with one live electronic act, so rule 3 makes it nightlife/club-night; A's null labels are not a valid classification."
+    },
+    {
+      "id": "0f8341e3-2601-4f36-8eec-fc1f10cdef5a",
+      "title": "Urban Art Club: Malworkshop im Berliner Loft",
+      "source": "themakery",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='workshops', subcategory='creative-workshop'",
+      "winner": "jev",
+      "reason": "The event is a 120-minute painting workshop ('Malworkshop') at a maker space, which is a creative workshop; A's null labels are wrong since a category must be assigned."
+    },
+    {
+      "id": "167f922c-eecf-4467-9d0f-36cff6153857",
+      "title": "Learn about The Super Food Ghee - Online",
+      "source": "themakery",
+      "haiku": "category='food', subcategory='tasting'",
+      "jev": "category='workshops', subcategory=None",
+      "winner": "jev",
+      "reason": "The primary activity is a paid 60-minute instructional online class about ghee, which is a workshop; none of the listed workshop subcategories (creative-workshop, language, digital-skills, dance-class, craft) clearly fit a cooking/food-knowledge class, so null is acceptable, while A fails to assign the required category."
+    },
+    {
+      "id": "1cadb926-4a6b-4c14-a6a2-06301057e8c9",
+      "title": "Origami für Kinder",
+      "source": "themakery",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='workshops', subcategory='craft'",
+      "winner": "haiku",
+      "reason": "Rule 12 explicitly routes events 'für Kinder' to family, overriding the craft-workshop nature of the activity."
+    },
+    {
+      "id": "1d3d6b11-f307-42dc-8a06-7ee38bda98c5",
+      "title": "Bucket Hat Bash&nbsp;",
+      "source": "themakery",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='workshops', subcategory='craft'",
+      "winner": "both",
+      "reason": "A 180-minute paid session at The Makery (a sewing/craft studio) to make a bucket hat is a hands-on crafting workshop, so 'craft' is the most precise subcategory while 'creative-workshop' is an acceptable broader fit."
+    },
+    {
+      "id": "363ea8c9-bd32-4fc8-b051-3edb18977f28",
+      "title": "Mische ein Bio Facial Serum (vegan)",
+      "source": "themakery",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='workshops', subcategory='craft'",
+      "winner": "both",
+      "reason": "A paid 120-minute DIY session making your own vegan facial serum at The Makery is a hands-on making workshop, so 'workshops' is clearly right and both 'craft' (hand-making a product) and 'creative-workshop' are defensible subcategories, with 'craft' the slightly better fit."
+    },
+    {
+      "id": "4105f635-3aed-48e5-8799-7be7ceebadff",
+      "title": "Percussion Ensemble - Become part of a band",
+      "source": "themakery",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='music', subcategory=None",
+      "winner": "haiku",
+      "reason": "The attendee pays 45€ to participate in a 120-minute hands-on percussion session at a workshop venue (The Makery) rather than to watch a concert, so the primary activity is a creative workshop, not live music."
+    },
+    {
+      "id": "425d3429-6f1b-4223-a033-bc89164730ee",
+      "title": "Emaillekurs",
+      "source": "themakery",
+      "haiku": "category='workshops', subcategory='craft'",
+      "jev": "category='workshops', subcategory='language'",
+      "winner": "haiku",
+      "reason": "An Emaillekurs (enameling course) at The Makery is a hands-on craft workshop; 'Deutsch' only indicates the language of instruction, not a language class."
+    },
+    {
+      "id": "78e9f575-d831-4f6a-a4f1-9a31359878da",
+      "title": "2-Day Mask Workshop: Design &amp; Build Your Own",
+      "source": "themakery",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='workshops', subcategory='craft'",
+      "winner": "both",
+      "reason": "A 2-day hands-on mask design-and-build workshop is a workshops event that fits both 'craft' (physically building the object) and the broader 'creative-workshop', so either subcategory is acceptable, with 'craft' being the slightly more specific fit."
+    },
+    {
+      "id": "7fe3edd2-3782-4936-bd41-bf90e9cd35f4",
+      "title": "Vegetarischer Kochkurs: Köstliche Spargelzeit",
+      "source": "themakery",
+      "haiku": "category='food', subcategory='tasting'",
+      "jev": "category='workshops', subcategory=None",
+      "winner": "jev",
+      "reason": "A cooking course is a hands-on class where attendees go to learn (rule 1), making it 'workshops' (creative-workshop or null acceptable), not a food 'tasting' event."
+    },
+    {
+      "id": "a0ccbf12-d4ad-4989-b798-3317838a1e2d",
+      "title": "Tropical Terrarium workshop - create your holy forest",
+      "source": "themakery",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='workshops', subcategory='craft'",
+      "winner": "both",
+      "reason": "A hands-on terrarium-building workshop is clearly 'workshops', and both 'craft' and 'creative-workshop' are valid, overlapping subcategories for this kind of hands-on creative making session."
+    },
+    {
+      "id": "a3f6c5b1-2948-43cb-bccb-3cc60a76fa54",
+      "title": "Tufting Workshop in Berlin: Create a fluffy artwork 30 x 40 cm",
+      "source": "themakery",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='workshops', subcategory='craft'",
+      "winner": "both",
+      "reason": "Tufting is a hands-on craft workshop so 'craft' is the most precise subcategory, but 'creative-workshop' is also a valid and defensible label for making an artwork, making both acceptable."
+    },
+    {
+      "id": "aebd97db-c279-4870-ae1d-3f7323e09306",
+      "title": "Espresso Martini Workshop",
+      "source": "themakery",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='workshops', subcategory=None",
+      "winner": "haiku",
+      "reason": "A 120-minute cocktail-making class is a hands-on workshop (the attendee goes to learn/make, not just to drink or dine), and 'creative-workshop' is the closest valid subcategory for a general making/DIY class, making B more complete than A's null."
+    },
+    {
+      "id": "b116a675-eafe-464f-b63c-2250ec501ee5",
+      "title": "Printing on Glass",
+      "source": "themakery",
+      "haiku": "category='workshops', subcategory='creative-workshop'",
+      "jev": "category='workshops', subcategory='craft'",
+      "winner": "both",
+      "reason": "A 120-minute paid hands-on glass printing session at a maker space is clearly a workshop, and 'craft' and 'creative-workshop' are overlapping, equally valid subcategories for this kind of creative/craft class."
+    },
+    {
+      "id": "c3de034d-d509-4852-8eb9-5047c83ff349",
+      "title": "Kimchi Workshop : Traditional Method Meets Local Flavor",
+      "source": "themakery",
+      "haiku": "category='food', subcategory='tasting'",
+      "jev": "category='workshops', subcategory=None",
+      "winner": "jev",
+      "reason": "A 150-minute hands-on kimchi-making class is a workshop (primary activity is learning to make it), not a food tasting; B's category is right and a null subcategory is permitted, though creative-workshop would fit best."
+    },
+    {
+      "id": "ec35cd34-2461-405b-a8d2-d0ecc3048e29",
+      "title": "Beginner Barista Latte Art Workshop&nbsp;",
+      "source": "themakery",
+      "haiku": "category='food', subcategory='tasting'",
+      "jev": "category='workshops', subcategory=None",
+      "winner": "jev",
+      "reason": "The primary activity is a hands-on skills class (learning latte art), not a tasting or dining event, so 'workshops' is correct; B's null subcategory is permitted, though 'craft' (or 'creative-workshop') would be the more precise choice."
+    },
+    {
+      "id": "f48fe9ea-cc27-49d0-b1a4-5d96dbda253f",
+      "title": "Sushi Workshop",
+      "source": "themakery",
+      "haiku": "category='food', subcategory='tasting'",
+      "jev": "category='workshops', subcategory=None",
+      "winner": "jev",
+      "reason": "A 210-minute hands-on sushi-making class at a workshop venue is a cooking workshop attendees go to learn, not a tasting or dining event, so 'workshops' is correct (null subcategory is acceptable, though 'creative-workshop' fits best)."
+    },
+    {
+      "id": "00db2468-1794-49b9-a978-d0ccee1c09f0",
+      "title": "Wenn Kopisten nicht kopieren. Die verborgenen Koautoren von Kalila und Dimna",
+      "source": "tip_berlin",
+      "haiku": "category='culture', subcategory='reading'",
+      "jev": "category='culture', subcategory=None",
+      "winner": "neither",
+      "reason": "The event is a scholarly lecture about Arabic manuscripts (part of a talk series at the Staatsbibliothek), which the taxonomy classifies as a talk/panel under meetups rather than a literary reading or generic culture event."
+    },
+    {
+      "id": "194cd267-195c-41f1-95f9-79c943b9e063",
+      "title": "Vorleseväter",
+      "source": "tip_berlin",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='culture', subcategory='reading'",
+      "winner": "jev",
+      "reason": "Although it concerns picture books, the description explicitly says fathers present their favorite picture books to an adult audience (\"einem erwachsenen Publikum\") at a literary venue, so it is a literary reading series for adults, not a children's event."
+    },
+    {
+      "id": "289c101f-d2bd-4bf9-8aa0-a2a9173ca7e8",
+      "title": "DSlam Night Shift - Der IT-Slam",
+      "source": "tip_berlin",
+      "haiku": "category='meetups', subcategory='talk-panel'",
+      "jev": "category='nightlife', subcategory='comedy'",
+      "winner": "haiku",
+      "reason": "An IT-Slam is a science-slam-style format of short competitive talks on IT topics, which fits talks/panels under meetups rather than stand-up comedy."
+    },
+    {
+      "id": "29a54904-05dc-46da-94b5-bc55a3fe2ee6",
+      "title": "Cellomarathon der Klasse von Prof. Wolfgang Emanuel Schmidt",
+      "source": "tip_berlin",
+      "haiku": "category='music', subcategory='classical'",
+      "jev": "category='meetups', subcategory=None",
+      "winner": "haiku",
+      "reason": "A 'Cellomarathon' by a professor's cello class is a classical music performance (student concert), so the primary activity is live classical music, not a meetup."
+    },
+    {
+      "id": "2b8c5a87-d7ed-4c0d-b51a-8a97e2b42177",
+      "title": "Schulvorstellung: Der Satanarchäolügenialkohöllische Wunschpunsch",
+      "source": "tip_berlin",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='culture', subcategory='theater'",
+      "winner": "haiku",
+      "reason": "\"Schulvorstellung\" marks a performance explicitly for school children and \"Der Wunschpunsch\" is Michael Ende's children's story, so per rule 12 a children's theater show is family/kids-program, not culture/theater."
+    },
+    {
+      "id": "2c6e4ad1-90ad-4021-902b-14cc33b5a174",
+      "title": "Dr. Ernst Michaelis: Gelobt, Ersehnt, Verfolgt, Ermordet - Ein jüdischer Kindera",
+      "source": "tip_berlin",
+      "haiku": "category='culture', subcategory=None",
+      "jev": "category='meetups', subcategory='talk-panel'",
+      "winner": "jev",
+      "reason": "The primary activity is a historical lecture (Vortrag) accompanying an exhibition, and talks/panels are explicitly placed under meetups/talk-panel in this taxonomy, whereas B's culture label with a null subcategory misidentifies the activity as the exhibition itself."
+    },
+    {
+      "id": "427aea51-3276-4204-a4df-974ed71b852b",
+      "title": "Luise im Schloss Charlottenburg – Zum Geburtstag von Preußens Königin",
+      "source": "tip_berlin",
+      "haiku": "category='culture', subcategory=None",
+      "jev": "category='outdoors', subcategory='walking-tour'",
+      "winner": "haiku",
+      "reason": "A guided tour (Führung) inside Schloss Charlottenburg about Queen Luise is a historical/cultural museum tour, not an outdoor walking tour, so 'culture' fits with no exact subcategory match (null)."
+    },
+    {
+      "id": "52773813-31ab-4253-9972-9cdf7185b45a",
+      "title": "Wie Netty Reiling zu Anna Seghers wurde",
+      "source": "tip_berlin",
+      "haiku": "category='culture', subcategory='reading'",
+      "jev": "category='culture', subcategory='exhibition'",
+      "winner": "jev",
+      "reason": "A biographical presentation at the Anna-Seghers-Museum with no description or mention of a text being read is best treated as a museum/exhibition program rather than a literary reading, though the data is sparse and both are within the correct 'culture' category."
+    },
+    {
+      "id": "638b5064-f9b7-4cba-ad5f-55ce4579493b",
+      "title": "Eröffnung: Lesia Vasylchenko",
+      "source": "tip_berlin",
+      "haiku": "category='culture', subcategory='exhibition'",
+      "jev": "category='culture', subcategory='gallery'",
+      "winner": "both",
+      "reason": "An 'Eröffnung' of a solo show by artist Lesia Vasylchenko at Schinkel Pavillon is an art exhibition opening, so 'culture' is clear and both 'exhibition' (preferred, since Schinkel Pavillon is a non-commercial exhibition space) and 'gallery' (opening/vernissage) are acceptable subcategories."
+    },
+    {
+      "id": "988e5eec-91df-47d6-a495-f62b5483a723",
+      "title": "Forschen, Formen, Fühlen",
+      "source": "tip_berlin",
+      "haiku": "category='family', subcategory='kids-program'",
+      "jev": "category='culture', subcategory='exhibition'",
+      "winner": "jev",
+      "reason": "The data contains no explicit children/family keywords required by rule 12, so 'family' is unsupported; a titled program at the Humboldt Forum with no further detail is best defaulted to culture/exhibition."
+    },
+    {
+      "id": "abb43692-bef3-4dce-8c0b-4f34c4d1ff74",
+      "title": "Max Reinhardt und das Theater des frühen 20. Jahrhunderts",
+      "source": "tip_berlin",
+      "haiku": "category='culture', subcategory=None",
+      "jev": "category='culture', subcategory='theater'",
+      "winner": "haiku",
+      "reason": "This is a museum lecture/talk series on theater history given by experts, not a theater performance, so 'culture' fits but the 'theater' subcategory misrepresents the primary activity; no listed culture subcategory matches a lecture, so null is correct."
+    },
+    {
+      "id": "adad3e20-689f-4caa-b005-d2798d2a1283",
+      "title": "Schwimmen/Schweben",
+      "source": "tip_berlin",
+      "haiku": "category='culture', subcategory='reading'",
+      "jev": "category='culture', subcategory='cinema'",
+      "winner": "haiku",
+      "reason": "The event is an author presenting her essay/book (a Lesung) by bestseller author Jaqueline Scheiber; the venue being a cinema does not make it a film screening per rule 1."
+    }
+  ],
+  "known_gaps": [
+    "The Jev arm produces no tags; production needs a tag strategy before any swap.",
+    "Both arms received source_tags; production Haiku also sees existing_category/tags (cleared here).",
+    "The judge is an LLM, not human ground truth; the control sample measures its agreement with consensus labels, not absolute accuracy.",
+    "Judged accuracy is over disagreements (hard by construction); estimated_overall_acc re-weights by the observed agreement rate.",
+    "Haiku latency is batch latency / batch size; both arms measured sequentially.",
+    "Single run at temperature 0 — a point estimate."
+  ]
+}
